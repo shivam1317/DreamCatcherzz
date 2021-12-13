@@ -1,4 +1,3 @@
-Faq
 youtube links
 insta links
 catalog
@@ -9,3 +8,20 @@ automatic email
 quotes
 locations
 videos
+404 page
+
+# Navbar
+[Logo] dreamcatcherzz
+
+Home 
+About
+enquiry 
+Faq
+
+# About 
+
+[Photo] about.
+linkdin link
+devloped by [link].
+
+# 
