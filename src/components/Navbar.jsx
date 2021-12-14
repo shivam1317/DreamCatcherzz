@@ -8,6 +8,8 @@ function Navbar() {
       if (window.innerWidth > 768 && !show) {
         setShow(true);
         console.log("i resizeedddd");
+      } else if (window.innerWidth <= 768 && show) {
+        setShow(false);
       }
     };
     window.addEventListener("resize", hideMenu);
@@ -55,30 +57,30 @@ function Navbar() {
             id="navigation"
           >
             <div className="lg:inline-flex lg:flex-row lg:ml-auto flex flex-col ">
-              <a
-                href="#"
+              <NavLink
+                to="/"
                 className="lg:inline-flex lg:w-auto px-3 py-2 rounded text-black hover:text-bold hover:bg-gray-500 ml-5"
               >
                 <span>Home</span>
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to="/about"
                 className="lg:inline-flex lg:w-auto px-3 py-2 rounded text-black hover:text-bold hover:bg-gray-500 ml-5"
               >
                 <span>About</span>
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to="/enquiry"
                 className="lg:inline-flex lg:w-auto px-3 py-2 rounded text-black hover:text-bold hover:bg-gray-500 ml-5"
               >
                 <span>Enquiry</span>
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to="/faq"
                 className="lg:inline-flex lg:w-auto px-3 py-2 rounded text-black hover:text-bold hover:bg-gray-500 ml-5"
               >
                 <span>FAQ's</span>
-              </a>
+              </NavLink>
             </div>
           </div>
         ) : null}
