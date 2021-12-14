@@ -1,0 +1,37 @@
+.krunal-ul {
+  position: relative;
+  overflow: hidden;
+
+  will-change: color;
+  transition: color 0.25s ease-out;
+}
+
+.krunal-ul::before,
+.krunal-ul::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--textUnderlinedLineColor, currentColor);
+
+  will-change: width;
+  transition: width 0.1s ease-out;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.krunal-ul::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.krunal-ul::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.krunal-ul:hover::before,
+.krunal-ul:hover::after {
+  width: 100%;
+  transition-duration: 0.2s;
+}
