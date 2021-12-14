@@ -12,7 +12,7 @@ function About() {
   </p>
   </h1>
   <p>
-
+    Achievemnts and magazine reviews
 
   </p>
   <p> icons 
@@ -20,13 +20,6 @@ function About() {
     <img src="" alt="Linkedin site" > </img> 
     </a>
     &emsp; &emsp; &emsp;
-    <a href="https://www.instagram.com">
-    <img src="" alt="Intsa site" > </img> 
-    </a>
-    &emsp; &emsp; &emsp;
-    <a href="https://www.youtube.com">
-    <img src="" alt="Youtube" > </img> 
-    </a>
     </p>
   </div>;
 }
