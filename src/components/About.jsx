@@ -3,13 +3,13 @@ import React from "react";
 function About() {
   return (
     <div className="h-fitcontent w-full flex-row my-5 " id="container">
-      <div className=" flex-wrap w-full inline-flex align-center   justify-evenly p-5 ">
+      <div className=" flex-wrap w-full inline-flex align-center justify-evenly p-5 ">
         <img
           className=" inline shadow-2xl rounded-xl"
           src="./images/logofinal.png"
           alt="The team of Dreamcatcherzzz"
         />
-        <div className=" inline-flex align-top my-10  h-40  w-1/2 ">
+        <div className=" inline-flex align-top my-10  h-fit lg:w-1/2 md:w-3/4">
           About them , to be researched and asked Lorem ipsum dolor sit amet,
           consectetur adipisicing elit. Itaque saepe dolorem odit corrupti
           assumenda accusantium, architecto soluta non excepturi consequatur
@@ -22,8 +22,8 @@ function About() {
         {/* <span className="mx-10"> oleo olekaoisj uogyahysHAUasv hjgCVAchievemnts and magazine reviews</span> */}
       </div>
 
-      <div className="w-full inline-flex align-center my-10  flex-wrap justify-evenly p-5">
-        <div className=" inline-flex align-top my-20  h-40  w-1/2 ">
+      <div className="w-full align-center inline-flex lg:my-10 md:my-0 flex-wrap-reverse justify-evenly p-5">
+        <div className=" inline-flex align-between my-20 h-fit lg:w-1/2 md:w-3/4">
           About them , to be researched and asked Lorem ipsum dolor sit amet,
           consectetur adipisicing elit. Itaque saepe dolorem odit corrupti
           assumenda accusantium, architecto soluta non excepturi consequatur
@@ -34,7 +34,7 @@ function About() {
         </div>
 
         <img
-          className=" rounded-xl inline shadow-2xl  mr-5"
+          className=" rounded-xl inline shadow-2xl lg:mr-5 md:mr-0"
           src="./images/mamfinal.png"
           alt="The team of Dreamcatcherzzz"
         />
@@ -42,13 +42,13 @@ function About() {
         {/* <span className="mx-10"> oleo olekaoisj uogyahysHAUasv hjgCVAchievemnts and magazine reviews</span> */}
       </div>
 
-      <div className=" flex-wrap w-full inline-flex align-center my-10 justify-evenly p-5 ">
+      <div className=" flex-wrap w-full inline-flex align-center lg:my-10 md:my-0 justify-evenly p-5 ">
         <img
           className=" inline shadow-2xl rounded-xl"
           src="./images/sirfinal.png"
           alt="The team of Dreamcatcherzzz"
         />
-        <div className=" inline-flex align-between my-20  h-40  w-1/2 ">
+        <div className=" inline-flex align-between my-20  h-fit  lg:w-1/2 md:w-3/4">
           About them , to be researched and asked Lorem ipsum dolor sit amet,
           consectetur adipisicing elit. Itaque saepe dolorem odit corrupti
           assumenda accusantium, architecto soluta non excepturi consequatur
