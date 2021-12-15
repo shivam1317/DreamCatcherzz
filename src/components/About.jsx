@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div>
+    <div className="h-screen w-screen" id="container">
       <img
         src=""
         alt="The team of Dreamcatcherzzz"
