@@ -1,6 +1,12 @@
-import React from "react";
-
+import AOS from "aos";
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
 function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <div className="h-fitcontent w-full flex-row my-5 " id="container">
       <div className=" flex-wrap w-full inline-flex align-center justify-evenly p-5 ">
@@ -8,6 +14,8 @@ function About() {
           className=" inline shadow-2xl rounded-xl"
           src="./images/logofinal.png"
           alt="The team of Dreamcatcherzzz"
+          data-aos="flip-left"
+          data-aos-duration="4000"
         />
         <div className=" inline-flex align-top my-10  h-fit lg:w-1/2 md:w-3/4">
           About them , to be researched and asked Lorem ipsum dolor sit amet,
@@ -37,6 +45,8 @@ function About() {
           className=" rounded-xl inline shadow-2xl lg:mr-5 md:mr-0"
           src="./images/mamfinal.png"
           alt="The team of Dreamcatcherzzz"
+          data-aos="fade-left"
+          data-aos-duration="4000"
         />
 
         {/* <span className="mx-10"> oleo olekaoisj uogyahysHAUasv hjgCVAchievemnts and magazine reviews</span> */}
@@ -47,6 +57,8 @@ function About() {
           className=" inline shadow-2xl rounded-xl"
           src="./images/sirfinal.png"
           alt="The team of Dreamcatcherzzz"
+          data-aos="fade-right"
+          data-aos-duration="4000"
         />
         <div className=" inline-flex align-between my-20  h-fit  lg:w-1/2 md:w-3/4">
           About them , to be researched and asked Lorem ipsum dolor sit amet,
