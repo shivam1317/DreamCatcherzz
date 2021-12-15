@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+* {
+  font-family: "Work Sans", sans-serif;
+}
 .krunal-ul {
   position: relative;
   overflow: hidden;
@@ -34,4 +38,8 @@
 .krunal-ul:hover::after {
   width: 100%;
   transition-duration: 0.2s;
+}
+
+.active {
+  color: red;
 }
