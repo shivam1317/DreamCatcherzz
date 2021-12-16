@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 95vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  width: 85%;
+}
+
+.item {
+  background: white;
+  margin-bottom: 5px;
+  padding: 0px 15px;
+}
+
+.title {
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content {
+  color: rgb(28 25 23);
+  max-height: 0;
+  overflow: hidden;
+}
+
+.content.show {
+  height: auto;
+  max-height: 9999px;
+}
