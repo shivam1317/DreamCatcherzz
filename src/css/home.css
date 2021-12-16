@@ -1,0 +1,11 @@
+.mySwiper {
+  width: 90vw;
+  height: 400px;
+  /* border: 2px solid black; */
+}
+.mySwiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
