@@ -102,12 +102,21 @@ function Navbar() {
               <NavLink
                 to="/about"
                 className="krunal-ul toggle lg:inline-flex lg:w-auto px-3 py-2 rounded text-black font-bold hover:text-bold ml-5"
+                activeClassName="active"
               >
                 <span>About</span>
               </NavLink>
               <NavLink
+                to="/services"
+                className="krunal-ul toggle lg:inline-flex lg:w-auto px-3 py-2 rounded text-black font-bold hover:text-bold ml-5"
+                activeClassName="active"
+              >
+                <span>Services</span>
+              </NavLink>
+              <NavLink
                 to="/faq"
                 className="krunal-ul toggle lg:inline-flex lg:w-auto px-3 py-2 rounded text-black font-bold hover:text-bold ml-5"
+                activeClassName="active"
               >
                 <span>FAQ's</span>
               </NavLink>
