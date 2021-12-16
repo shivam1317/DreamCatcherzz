@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/home.css";
+import YoutubeEmbed from "../js/youtube.js";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
@@ -37,6 +38,16 @@ function Home() {
           <img src="https://picsum.photos/seed/picsum/200/300" alt="random" />
         </SwiperSlide>
       </Swiper>
+      <div className="flex justify-between align-center h-fit p-10 w-full ">
+        <YoutubeEmbed />
+        <div className="inline h-auto border border-black my-auto  text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga error
+          odit et nihil placeat deleniti! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Repellat tenetur ipsa nesciunt hic cum, nulla iure,
+          cupiditate, quo corporis obcaecati ad. Officia, perspiciatis id
+          molestiae distinctio maiores perferendis quod alias.
+        </div>
+      </div>
     </div>
   );
 }
