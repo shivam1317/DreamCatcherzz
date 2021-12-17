@@ -121,7 +121,7 @@ function Navbar() {
                 <span>FAQ's</span>
               </NavLink>
               <Link
-                to="/enquiry"
+                to="/contact"
                 className="toggle lg:inline-flex lg:w-auto px-3 py-2 rounded-2xl text-white font-bold ml-5 bg-red-600 border-2 hover:border-red-600 hover:bg-white hover:text-red-600 transition-all duration-500"
               >
                 <span>Contact Us</span>
