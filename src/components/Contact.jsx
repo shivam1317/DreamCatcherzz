@@ -1,6 +1,6 @@
 import React from "react";
 
-function Enquiry() {
+function Contact() {
   return (
     <div className="h-screen w-screen" id="container">
       This is a enquiry page
@@ -8,4 +8,4 @@ function Enquiry() {
   );
 }
 
-export default Enquiry;
+export default Contact;
