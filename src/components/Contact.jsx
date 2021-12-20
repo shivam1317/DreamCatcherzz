@@ -32,7 +32,12 @@ function Contact() {
     <div className="h-fit w-full" id="container">
       <div className="w-full flex justify-evenly flex-wrap">
         <img src="./images/contact_us.svg" alt="contact us" className="w-1/3" />
-        <form className="w-full max-w-lg mt-10" ref={form} onSubmit={sendEmail}>
+        <form
+          className="w-full max-w-lg mt-10"
+          ref={form}
+          onSubmit={sendEmail}
+          autoComplete="off"
+        >
           <div className="flex flex-wrap md:mx-0 lg:-mx-3 w-full justify-center mb-6 ">
             <div className="md:w-2/3 lg:w-1/2 px-3 mb-6 md:mb-0 ">
               <label
