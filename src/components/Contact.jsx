@@ -44,15 +44,15 @@ function Contact() {
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                 for="grid-first-name"
               >
-                First Name
+                Name
               </label>
               <input
                 className="appearance-none block lg:w-full md:w-3/4 bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 id="grid-first-name"
                 type="text"
-                placeholder="Jane"
+                placeholder="Jane Doe"
                 required
-                name="firstName"
+                name="name"
               />
             </div>
             <div className="lg:w-1/2 md:w-20 px-3">
@@ -60,15 +60,15 @@ function Contact() {
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                 for="grid-last-name"
               >
-                Last Name
+                Phone No
               </label>
               <input
                 className="appearance-none block lg:w-full md:w-2/3 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-last-name"
-                type="text"
-                placeholder="Doe"
+                type="number"
+                placeholder="Phone no..."
                 required
-                name="lastName"
+                name="phone"
               />
             </div>
           </div>
@@ -91,46 +91,106 @@ function Contact() {
             </div>
           </div>
           <div className="flex flex-wrap md:mx-0 lg:-mx-3 w-full justify-center mb-6">
-            <div className="lg:w-1/2 md:w-1/3 px-3 mb-6 md:mb-0">
+            <div class="lg:w-1/2 md:w-1/3 px-3 mb-6 md:mb-0">
               <label
-                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="grid-city"
-              >
-                city
-              </label>
-              <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="grid-city"
-                type="text"
-                placeholder="Mumbai"
-                name="state"
-              />
-            </div>
-            <div className="lg:w-1/2 md:w-1/3 px-3 mb-6 md:mb-0">
-              <label
-                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                 for="grid-state"
               >
-                State
+                Space Type
               </label>
-              <div className="relative">
-                <input
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="grid-city"
-                  type="text"
-                  placeholder="Maharashtra"
-                  required
-                  name="state"
-                />
+              <div class="relative">
+                <select
+                  class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-state"
+                  name="spaceType"
+                >
+                  <option>Recidential/Home</option>
+                  <option>Office</option>
+                  <option>Store</option>
+                  <option>Cafe/Restaurant</option>
+                  <option>Other</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </div>
               </div>
             </div>
-            <div className="flex flex-wrap md:mx-0 lg:-mx-3 w-full justify-center md:mb-3 lg:mb-6 ">
+
+            <div class="lg:w-1/2 md:w-1/3 px-3 mb-6 md:mb-0">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-state"
+              >
+                Project type
+              </label>
+              <div class="relative">
+                <select
+                  class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-state"
+                  name="projectType"
+                >
+                  <option>New</option>
+                  <option>Renovation</option>
+                  <option>Other</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-wrap md:mx-0 lg:-mx-3 w-full justify-center md:mb-3 lg:mb-4 ">
               <div className="lg:w-1/2 md:w-1/3 px-3 mb-6 md:mb-0 mt-7">
                 <label
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                   for="grid-zip"
                 >
-                  Date
+                  Square feet area
+                </label>
+                <input
+                  className="appearance-none block md:w-5/6 lg:w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-zip"
+                  type="text"
+                  placeholder="area"
+                  required
+                  name="area"
+                />
+              </div>
+              <div className="lg:w-1/2 md:w-1/3 px-3 mb-6 md:mb-0 mt-7">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  for="grid-zip"
+                >
+                  Location
+                </label>
+                <input
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-zip"
+                  type="text"
+                  placeholder="Mumbai"
+                  required
+                  name="location"
+                />
+              </div>
+            </div>
+            <div className="flex flex-wrap md:mx-0 lg:-mx-3 w-full justify-center md:mb-3 lg:mb-4 ">
+              <div className="lg:w-1/2 md:w-1/3 px-3 mb-4 md:mb-0 mt-7">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  for="grid-zip"
+                >
+                  When you want to start work
                 </label>
                 <input
                   className="appearance-none block md:w-5/6 lg:w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -146,15 +206,15 @@ function Contact() {
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                   for="grid-zip"
                 >
-                  Phone No
+                  Budget
                 </label>
                 <input
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-zip"
                   type="number"
-                  placeholder="Phone no..."
+                  placeholder="Budget..."
                   required
-                  name="phone"
+                  name="budget"
                 />
               </div>
             </div>
