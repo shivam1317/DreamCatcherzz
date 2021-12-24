@@ -76,6 +76,22 @@ const Modal = ({ open, onClose }) => {
                           name="email"
                         />
                       </div>
+                      <div className="w-full px-3 mb-6 md:mb-0 ">
+                        <label
+                          className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                          for="grid-first-name"
+                        >
+                          Phone no
+                        </label>
+                        <input
+                          className="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                          id="grid-first-name"
+                          type="number"
+                          placeholder="Phone no..."
+                          required
+                          name="phone"
+                        />
+                      </div>
                       <div class="w-full px-3 mb-6 md:mb-0">
                         <label
                           class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -106,6 +122,7 @@ const Modal = ({ open, onClose }) => {
                           </div>
                         </div>
                       </div>
+
                       <div class="lg:w-full md:w-1/3 px-3 mb-6 md:mb-0 mt-3">
                         <button className="uppercase bg-red-600 text-white font-bold hover:text-red-600 hover:bg-white border-2 hover:border-red-600 w-full py-1 px-3 transition-all delay-75 rounded-xl text-center">
                           Submit
