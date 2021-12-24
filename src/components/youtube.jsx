@@ -1,21 +1,16 @@
 import React from "react";
-import PropTypes from "prop-types";
-
 
 const YoutubeEmbed = () => (
-  <div className="video-responsive mx-10 inline">
+  <div className="video-responsive inline lg:w-1/2 md:w-full">
     <iframe
-      width="600"
-      height="400"
+      className="w-full h-80 rounded-xl"
       src={`https://www.youtube.com/embed/kUoXzdj201k`}
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
       title="Embedded youtube"
-    /> 
+    />
   </div>
 );
-
-
 
 export default YoutubeEmbed;
