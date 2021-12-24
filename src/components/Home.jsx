@@ -8,15 +8,17 @@ import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper/core";
 
 import "swiper/components/navigation/navigation.min.css"; // Navigation module
 import "swiper/components/pagination/pagination.min.css"; // Pagination module
-import Modal from "./Modal";
+import Modal, { submitted } from "./Modal";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
-    setTimeout(() => {
-      setIsOpen(true);
-    }, 10000);
+    if (!submitted) {
+      setTimeout(() => {
+        setIsOpen(true);
+      }, 10000);
+    }
   }, []);
   return (
     <div className="h-screen" id="container">
@@ -25,8 +27,6 @@ function Home() {
         centeredSlides
         navigation={true}
         pagination={{ clickable: true }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,

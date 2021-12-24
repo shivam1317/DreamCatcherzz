@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "../css/modal.css";
 import { useSpring, animated } from "react-spring";
 
+let submitted = false;
 const Modal = ({ open, onClose }) => {
   const animation = useSpring({
     config: {
@@ -11,6 +12,11 @@ const Modal = ({ open, onClose }) => {
     opacity: open ? 1 : 0,
     transform: open ? `translateY(0%)` : `translateY(-100%)`,
   });
+  const closePopup = (e) => {
+    e.preventDefault();
+    submitted = true;
+    onClose();
+  };
   return (
     <>
       {open
@@ -41,7 +47,7 @@ const Modal = ({ open, onClose }) => {
                     <form
                       className="w-full max-w-lg mt-5"
                       // ref={form}
-                      // onSubmit={sendEmail}
+                      // onSubmit={closePopup}
                       autoComplete="off"
                     >
                       <div className="w-full px-3 mb-6 md:mb-0 ">
@@ -124,7 +130,11 @@ const Modal = ({ open, onClose }) => {
                       </div>
 
                       <div class="lg:w-full md:w-1/3 px-3 mb-6 md:mb-0 mt-3">
-                        <button className="uppercase bg-red-600 text-white font-bold hover:text-red-600 hover:bg-white border-2 hover:border-red-600 w-full py-1 px-3 transition-all delay-75 rounded-xl text-center">
+                        <button
+                          className="uppercase bg-red-600 text-white font-bold hover:text-red-600 hover:bg-white border-2 hover:border-red-600 w-full py-1 px-3 transition-all delay-75 rounded-xl text-center"
+                          type="submit"
+                          onClick={closePopup}
+                        >
                           Submit
                         </button>
                       </div>
@@ -141,3 +151,4 @@ const Modal = ({ open, onClose }) => {
 };
 
 export default Modal;
+export { submitted };
