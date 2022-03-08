@@ -32,9 +32,9 @@ function Navbar() {
     };
   });
   return (
-    <div className="py-16">
+    <div className="py-14">
       <nav className="flex z-10 fixed top-0 inset-x-0 items-center bg-white p-3 flex-wrap md:shadow-xl text-lg">
-        <a href="#" className="p-2 mr-4 inline-flex items-center">
+        <a href="/" className="p-2 mr-4 inline-flex items-center">
           <div className="unnamed">
             <img
               src="./images/dreamcatcherzz_logo.png"
