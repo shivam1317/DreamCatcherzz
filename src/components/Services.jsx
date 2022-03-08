@@ -6,6 +6,7 @@ import Cafe from "../Data/cafe/Cafe";
 import Kitchen from "../Data/Kitchen/Kitchen";
 import Office from "../Data/Office/Office";
 import Store from "../Data/Store/Store";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const services = [
   {
@@ -49,13 +50,20 @@ const Services = () => {
       <div className="w-full flex flex-wrap justify-evenly">
         {services.map((service) => {
           return (
-            <div className="lg:w-1/4 flex justify-center items-center mx-5 my-3 md:w-2/5 sm:w-full">
+            <Link
+              className="lg:w-1/4 flex justify-center items-center mx-5 my-3 md:w-2/5 sm:w-full cursor-pointer hover:bg-gray-200 p-2 rounded-xl"
+              to={service.heading}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               <img src={service.src} alt="service" className="w-3/5 mr-2" />
               <div className="flex flex-col justify-around">
                 <h3 className="text-lg font-bold">{service.heading}</h3>
                 <span className="text-sm">{service.description}</span>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>
@@ -65,6 +73,14 @@ const Services = () => {
       <Kitchen />
       <Office />
       <Store />
+      <div className="flex justify-center items-center w-full mb-5 p-5">
+        <button
+          onClick={scroll.scrollToTop}
+          className="bg-red-600 text-white hover:bg-white hover:text-red-600 transition-all ease-in-out p-3 hover:border-red-600 border-2 rounded-lg"
+        >
+          Back to top
+        </button>
+      </div>
     </div>
   );
 };

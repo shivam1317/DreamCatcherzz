@@ -13,7 +13,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 const Store = () => {
   return (
     <>
-      <div className="my-20 w-full">
+      <div className="mt-20 w-full mb-5" id="Store">
         <h1 className="text-center my-5 text-3xl font-bold bg-red-500 text-white p-5 ">
           Store
         </h1>
@@ -26,7 +26,7 @@ const Store = () => {
             delay: 3000,
             disableOnInteraction: false,
           }}
-          className="mySwiper w-full my-10"
+          className="mySwiper w-full mt-10"
           loopFillGroupWithBlank={false}
         >
           {storeData.map((data) => {

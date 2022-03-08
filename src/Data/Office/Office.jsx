@@ -13,7 +13,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 const Office = () => {
   return (
     <>
-      <div className="my-20 w-full">
+      <div className="my-20 w-full" id="Office">
         <h1 className="text-center my-5 text-3xl font-bold bg-red-500 text-white p-5 ">
           Office
         </h1>
