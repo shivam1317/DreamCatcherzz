@@ -1,9 +1,9 @@
-.mySwiper {
+.mySwiper1 {
   width: 90vw;
   height: 250px;
   /* border: 2px solid black; */
 }
-.mySwiperSlide {
+.mySwiperSlide1 {
   display: flex;
   justify-content: center;
   align-items: center;
