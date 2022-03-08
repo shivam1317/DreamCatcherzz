@@ -1,5 +1,11 @@
 import React from "react";
 import "../css/service.css";
+import Interior from "../Data/interior/Interior.jsx";
+import ServiceHome from "../Data/Home/ServiceHome";
+import Cafe from "../Data/cafe/Cafe";
+import Kitchen from "../Data/Kitchen/Kitchen";
+import Office from "../Data/Office/Office";
+import Store from "../Data/Store/Store";
 
 const services = [
   {
@@ -53,6 +59,12 @@ const Services = () => {
           );
         })}
       </div>
+      <Interior />
+      <ServiceHome />
+      <Cafe />
+      <Kitchen />
+      <Office />
+      <Store />
     </div>
   );
 };

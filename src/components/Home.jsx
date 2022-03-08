@@ -31,18 +31,18 @@ function Home() {
           delay: 3000,
           disableOnInteraction: false,
         }}
-        className="mySwiper"
+        className="mySwiper1"
       >
-        <SwiperSlide className="mySwiperSlide">
+        <SwiperSlide className="mySwiperSlide1">
           <img src="https://picsum.photos/seed/picsum/200/300" alt="random" />
         </SwiperSlide>
-        <SwiperSlide className="mySwiperSlide">
+        <SwiperSlide className="mySwiperSlide1">
           <img src="https://picsum.photos/seed/picsum/200/300" alt="random" />
         </SwiperSlide>
-        <SwiperSlide className="mySwiperSlide">
+        <SwiperSlide className="mySwiperSlide1">
           <img src="https://picsum.photos/seed/picsum/200/300" alt="random" />
         </SwiperSlide>
-        <SwiperSlide className="mySwiperSlide">
+        <SwiperSlide className="mySwiperSlide1">
           <img src="https://picsum.photos/seed/picsum/200/300" alt="random" />
         </SwiperSlide>
       </Swiper>
