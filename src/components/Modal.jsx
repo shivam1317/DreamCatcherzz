@@ -43,8 +43,8 @@ const Modal = ({ open, onClose }) => {
                       />
                     </svg>
                   </div>
-                  <div className="flex justify-evenly p-5 rounded-b-lg">
-                    <div className="flex flex-col justify-evenly items-center w-2/5">
+                  <div className="flex justify-evenly p-5 rounded-b-lg flex-wrap">
+                    <div className="flex flex-col justify-evenly items-center lg:w-2/5 md:w-full">
                       <img
                         src="./images/interior.jpg"
                         alt="interior"
@@ -67,7 +67,7 @@ const Modal = ({ open, onClose }) => {
                       </div>
                     </div>
                     <div
-                      className="w-1/2 max-w-lg"
+                      className="lg:w-1/2 md:w-full max-w-lg"
                       // ref={form}
                       // onSubmit={closePopup}
                       autoComplete="off"

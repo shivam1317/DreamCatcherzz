@@ -47,7 +47,7 @@ function Home() {
                 </h2>
                 <p className="text-lg my-1 self-start">{data.description}</p>
                 <button className="bg-red-600 text-white hover:bg-white hover:text-red-600 transition-all ease-in-out p-3 hover:border-red-600 border-2 rounded-lg my-2 self-start">
-                  {data.buttonText}
+                  <NavLink to="/contact">{data.buttonText}</NavLink>
                 </button>
               </div>
               <img
@@ -75,11 +75,8 @@ function Home() {
       </div> */}
       <div className="flex items-center justify-between my-5  font-bold bg-red-500 text-white p-5">
         <h1 className="text-3xl">Our Services </h1>
-        <button className=" lg:inline-flex lg:w-auto rounded-2xl text-white font-bold ml-5 bg-transparent border-2 hover:border-white hover:bg-white hover:text-red-500 transition-all duration-500">
-          <NavLink to="/services" className="p-4 ">
-            {" "}
-            Show All Services{" "}
-          </NavLink>
+        <button className=" lg:inline-flex lg:w-auto rounded-2xl text-white font-bold ml-5 bg-transparent border-2 hover:border-white hover:bg-white hover:text-red-500 transition-all duration-500 md:text-center p-3">
+          <NavLink to="/services">Show All Services</NavLink>
         </button>
       </div>
       <Swiper
