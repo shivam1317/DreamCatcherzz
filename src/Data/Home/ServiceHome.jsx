@@ -18,7 +18,7 @@ const ServiceHome = () => {
           Home
         </h1>
         <Swiper
-          slidesPerView={3}
+          slidesPerView={window.innerWidth <= 768 ? 1 : 3}
           spaceBetween={10}
           navigation={true}
           pagination={false}

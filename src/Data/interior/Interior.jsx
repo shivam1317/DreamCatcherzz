@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper/core";
-
 import "swiper/components/navigation/navigation.min.css"; // Navigation module
 import "swiper/components/pagination/pagination.min.css"; // Pagination module
 import { interiorData } from "./interiorData";
@@ -18,7 +17,7 @@ const Interior = () => {
           Interior
         </h1>
         <Swiper
-          slidesPerView={3}
+          slidesPerView={window.innerWidth <= 768 ? 1 : 3}
           spaceBetween={10}
           navigation={true}
           pagination={false}
