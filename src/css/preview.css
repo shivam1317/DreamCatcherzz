@@ -1,0 +1,10 @@
+.mySwiper1 {
+  height: 60%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .mySwiper1 {
+    height: fit-content;
+  }
+}

@@ -25,7 +25,7 @@ const Modal = ({ open, onClose }) => {
               <animated.div style={animation}>
                 <form className="modal">
                   {/* <button onClick={onClose}>Close</button> */}
-                  <div className="flex w-full justify-between p-4 outline-none text-2xl bg-red-500 text-white">
+                  <div className="flex w-full justify-between p-4 outline-none text-2xl bg-red-500 text-white rounded-t-lg">
                     <span>Contact the designers</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ const Modal = ({ open, onClose }) => {
                       />
                     </svg>
                   </div>
-                  <div className="flex justify-evenly p-5">
+                  <div className="flex justify-evenly p-5 rounded-b-lg">
                     <div className="flex flex-col justify-evenly items-center w-2/5">
                       <img
                         src="./images/interior.jpg"
