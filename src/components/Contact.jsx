@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./Footer";
 
 function Contact() {
   const form = useRef();
@@ -242,6 +243,7 @@ function Contact() {
           </div>
         </form>
       </div>
+      <Footer />
     </div>
   );
 }
