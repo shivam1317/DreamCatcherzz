@@ -29,9 +29,12 @@ const Store = () => {
           className="mySwiper w-full mt-10"
           loopFillGroupWithBlank={false}
         >
-          {storeData.map((data) => {
+          {storeData.map((data, index) => {
             return (
-              <SwiperSlide className="mySwiperSlide p-3 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-lg">
+              <SwiperSlide
+                className="mySwiperSlide p-3 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-lg"
+                key={index}
+              >
                 <img
                   src={data.src}
                   alt="Office"

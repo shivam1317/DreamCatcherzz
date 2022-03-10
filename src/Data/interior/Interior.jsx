@@ -28,9 +28,12 @@ const Interior = () => {
           className="mySwiper w-full my-10"
           loopFillGroupWithBlank={false}
         >
-          {interiorData.map((data) => {
+          {interiorData.map((data, index) => {
             return (
-              <SwiperSlide className="mySwiperSlide p-3 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-lg">
+              <SwiperSlide
+                className="mySwiperSlide p-3 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-lg"
+                key={index}
+              >
                 <img
                   src={data.src}
                   alt="Interior"

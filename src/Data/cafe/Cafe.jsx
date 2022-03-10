@@ -29,9 +29,12 @@ const Cafe = () => {
           className="mySwiper w-full my-10"
           loopFillGroupWithBlank={false}
         >
-          {cafeData.map((data) => {
+          {cafeData.map((data, index) => {
             return (
-              <SwiperSlide className="mySwiperSlide p-3 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-lg">
+              <SwiperSlide
+                className="mySwiperSlide p-3 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-lg"
+                key={index}
+              >
                 <img src={data.src} alt="Cafe" className="w-full rounded-lg" />
                 <p className="my-3">{data.description}</p>
               </SwiperSlide>

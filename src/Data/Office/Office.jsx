@@ -29,9 +29,12 @@ const Office = () => {
           className="mySwiper w-full my-10"
           loopFillGroupWithBlank={false}
         >
-          {officeData.map((data) => {
+          {officeData.map((data, index) => {
             return (
-              <SwiperSlide className="mySwiperSlide p-3 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-lg">
+              <SwiperSlide
+                className="mySwiperSlide p-3 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-lg"
+                key={index}
+              >
                 <img
                   src={data.src}
                   alt="Office"

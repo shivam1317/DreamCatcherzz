@@ -11,6 +11,7 @@ import "swiper/components/pagination/pagination.min.css"; // Pagination module
 import Modal, { submitted } from "./Modal";
 import { serviceData } from "./HomeData/servicesData";
 import { magazineData } from "./HomeData/magazineData";
+import { customerData } from "./HomeData/customerData";
 import "../css/preview.css";
 
 import "../css/magazine.css";
@@ -33,14 +34,17 @@ function Home() {
         navigation={false}
         pagination={false}
         autoplay={{
-          delay: 3000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         className="mySwiper1 p-3"
       >
-        {serviceData.map((data) => {
+        {serviceData.map((data, index) => {
           return (
-            <SwiperSlide className="mySwiperSlide1 flex items-center justify-evenly p-10 bg-gray-100 flex-wrap-reverse">
+            <SwiperSlide
+              className="mySwiperSlide1 flex items-center justify-evenly p-10 bg-gray-100 flex-wrap-reverse"
+              key={index}
+            >
               <div className="flex justify-items-start items-center flex-col p-5 lg:w-2/5 md:w-full">
                 <h2 className="font-bold text-2xl self-start">
                   This is heading
@@ -59,7 +63,7 @@ function Home() {
           );
         })}
       </Swiper>
-      <div className="flex lg:justify-evenly md:justify-between align-center h-fit  p-10 w-full flex-wrap">
+      <div className="flex lg:justify-evenly md:justify-center align-center h-fit lg:p-10 md:p-5 w-full flex-wrap">
         <YoutubeEmbed />
         <div className="inline h-auto  lg:my-auto my-10 lg:w-1/3 md:w-full text-center">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga error
@@ -91,9 +95,12 @@ function Home() {
         className=" w-full my-10"
         loopFillGroupWithBlank={false}
       >
-        {serviceData.map((service) => {
+        {serviceData.map((service, index) => {
           return (
-            <SwiperSlide className="my-3 p-3 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-xl">
+            <SwiperSlide
+              className="my-3 p-3 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-xl"
+              key={index}
+            >
               <img src={service.src} alt="Cafe" className="w-full rounded-lg" />
               <p className="my-3">{service.description}</p>
             </SwiperSlide>
@@ -124,15 +131,83 @@ function Home() {
         className=" w-full my-5"
         loopFillGroupWithBlank={false}
       >
-        {magazineData.map((magazine) => {
+        {magazineData.map((magazine, index) => {
           return (
-            <SwiperSlide className=" p-3 my-3 rounded-lg flex flex-col shadow-slate-300 shadow-xl">
-              <p className=" quote mt-3 text-center bg-blue-500 text-white w-full p-5 italic text-md rounded-t-xl ">
-                "{magazine.tagline}"
-              </p>
+            <SwiperSlide
+              className="p-3 my-3 rounded-lg flex flex-col shadow-slate-300 shadow-xl"
+              key={index}
+            >
+              <div className="text-center bg-blue-500 text-white w-full p-3 italic text-md rounded-t-xl ">
+                <img
+                  src="./images/left-quote.png"
+                  alt="left-quote"
+                  className="block h-8 w-8"
+                />
+                <p className="quote p-3">{magazine.tagline}</p>
+                <img
+                  src="./images/right-quote.png"
+                  alt="left-quote"
+                  className="h-8 w-8 ml-auto"
+                />
+              </div>
               <p className=" mb-3 text-right italic font-bold bg-gray-100 rounded-b-xl text-xl p-5 w-full">
                 {magazine.mname}
               </p>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+      <div className="flex items-center my-5 justify-center font-bold bg-red-500 text-white p-5">
+        <h1 className="text-3xl text-center"> Customer review </h1>
+      </div>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+        navigation={false}
+        pagination={false}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        className=" w-full my-5"
+        loopFillGroupWithBlank={false}
+      >
+        {customerData.map((customer, index) => {
+          return (
+            <SwiperSlide
+              className="flex justify-evenly items-center p-5 my-3 bg-gray-200 flex-wrap-reverse"
+              key={index}
+            >
+              <div className="flex review-card flex-col justify-evenly p-4 lg:w-1/3 md:w-full rounded-lg bg-white">
+                <div className="flex justify-evenly items-center px-4 py-3 bg-red-500 w-full rounded-lg my-3">
+                  <img
+                    src={customer.pfpSrc}
+                    alt="customer"
+                    className="h-12 w-12 rounded-full"
+                  />
+                  <p className="font-bold text-lg text-white text-center">
+                    {customer.cname}
+                  </p>
+                </div>
+                <p className="text-center my-3">{customer.review}</p>
+                <button className="bg-red-500 text-white hover:bg-white border-2 hover:border-red-500 hover:text-red-500 rounded-lg transition-all ease-in-out w-1/2 self-center p-2 font-bold my-3">
+                  {/* Add customer review playlist here... */}
+                  <a
+                    href="https://youtube.com/playlist?list=PL0dEcKCNDuvx1bkv73gXHYxBV13nAyImC"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Watch video
+                  </a>
+                </button>
+              </div>
+              <div className="lg:w-1/3 md:w-full lg:inline md:hidden">
+                <img
+                  src="./images/Customers/review_svg.svg"
+                  alt="svg"
+                  className="h-fit"
+                />
+              </div>
             </SwiperSlide>
           );
         })}
