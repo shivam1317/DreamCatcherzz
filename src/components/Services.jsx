@@ -7,6 +7,7 @@ import Kitchen from "../Data/Kitchen/Kitchen";
 import Office from "../Data/Office/Office";
 import Store from "../Data/Store/Store";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Footer from "./Footer";
 
 const services = [
   {
@@ -81,6 +82,7 @@ const Services = () => {
           Back to top
         </button>
       </div>
+      <Footer />
     </div>
   );
 };

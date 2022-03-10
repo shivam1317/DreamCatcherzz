@@ -13,7 +13,7 @@ import { serviceData } from "./HomeData/servicesData";
 import { magazineData } from "./HomeData/magazineData";
 import { customerData } from "./HomeData/customerData";
 import "../css/preview.css";
-
+import Footer from "./Footer";
 import "../css/magazine.css";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -212,6 +212,7 @@ function Home() {
           );
         })}
       </Swiper>
+      <Footer />
     </div>
   );
 }
