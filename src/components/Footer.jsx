@@ -3,9 +3,9 @@ import { NavLink, Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="flex p-3 justify-evenly  flex-wrap bg-red-500 ">
-        <div className="lg:p-5 md:p-2 flex flex-col justify-evenly items-center text-red-500  lg:w-1/5 lg:mx-5 md:mx-3 md:w-2/5 ">
-          <p className="text-white font-bold text-xl text-center w-full">
+      <div className="flex p-3 justify-evenly w-full flex-wrap bg-red-500 ">
+        <div className="lg:p-5 md:p-2 flex flex-col justify-evenly items-center text-red-500  lg:w-1/5 lg:mx-1 md:mx-3 md:w-2/5 ">
+          <p className="text-white font-bold text-xl text-center w-full p-3">
             Social Media
           </p>
           <p className="flex justify-evenly bg-white p-3 my-3 rounded-lg mx-3 w-full">
@@ -17,6 +17,7 @@ const Footer = () => {
             <a
               href="https://www.instagram.com/dreamcatcherzz_design/"
               target="_blank"
+              rel="noreferrer"
             >
               Instagram
             </a>
@@ -30,6 +31,7 @@ const Footer = () => {
             <a
               href="https://www.youtube.com/c/DreamcatcherzzDesign"
               target="_blank"
+              rel="noreferrer"
             >
               YouTube
             </a>
@@ -43,6 +45,7 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/kashyap-rawat-a0869614/"
               target="_blank"
+              rel="noreferrer"
             >
               LinkedIn
             </a>
@@ -56,12 +59,13 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/dreamcatcherzzdesign/?ti=as"
               target="_blank"
+              rel="noreferrer"
             >
               Facebook
             </a>
           </p>
         </div>
-        <div className=" lg:p-5 md:p-2 lg:w-1/5 lg:mx-5 md:mx-3 md:w-2/5">
+        <div className=" lg:p-5 md:p-2 lg:w-1/5 lg:mx-4 md:mx-3 md:w-2/5">
           <p className="p-3 text-white text-center text-xl font-bold">
             Quick Access
           </p>
@@ -81,7 +85,7 @@ const Footer = () => {
             <a href="/contact">Contact Us</a>
           </p>
         </div>
-        <div className="p-5 lg:w-1/5 mx-5 md:w-2/5">
+        <div className="p-5 lg:w-1/5 mx-4 md:w-2/5">
           <p className="p-3 text-white text-center font-bold text-xl">
             Services
           </p>
@@ -97,7 +101,7 @@ const Footer = () => {
             Vastu & Energy Correction
           </p>
         </div>
-        <div className="p-5 lg:w-1/5 h-full flex flex-col justify-evenly items-center mx-5 md:w-2/5">
+        <div className="p-5 lg:w-1/5 h-full flex flex-col justify-evenly items-center mx-4 md:w-2/5">
           <p className="p-3 text-white text-center font-bold text-xl">
             Contact Us
           </p>
