@@ -14,7 +14,7 @@ const Interior = () => {
     <>
       <div className="my-20 w-full" id="Interior">
         <h1 className="text-center my-5 text-3xl font-bold bg-red-500 text-white p-5 ">
-          Interior
+          Interior Design Homes
         </h1>
         <Swiper
           slidesPerView={window.innerWidth <= 768 ? 1 : 3}

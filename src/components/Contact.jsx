@@ -108,7 +108,7 @@ function Contact() {
                   <option>Recidential/Home</option>
                   <option>Office</option>
                   <option>Store</option>
-                  <option>Cafe/Restaurant</option>
+                  <option>Cafe/Restaurant/QSR</option>
                   <option>Other</option>
                 </select>
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">

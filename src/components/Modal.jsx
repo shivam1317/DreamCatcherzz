@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 import ReactDOM from "react-dom";
 import "../css/modal.css";
 import { useSpring, animated } from "react-spring";
 
 let submitted = false;
 const Modal = ({ open, onClose }) => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    closePopup();
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_6zz59du",
+        "template_fw6atxr",
+        form.current,
+        "user_9cabxlWaMreMwWbuqzhvS"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   const animation = useSpring({
     config: {
       duration: 300,
@@ -12,8 +35,7 @@ const Modal = ({ open, onClose }) => {
     opacity: open ? 1 : 0,
     transform: open ? `translateY(0%)` : `translateY(-100%)`,
   });
-  const closePopup = (e) => {
-    e.preventDefault();
+  const closePopup = () => {
     submitted = true;
     onClose();
   };
@@ -23,7 +45,7 @@ const Modal = ({ open, onClose }) => {
         ? ReactDOM.createPortal(
             <div className="overlay">
               <animated.div style={animation}>
-                <form className="modal">
+                <form className="modal" ref={form} onSubmit={sendEmail}>
                   {/* <button onClick={onClose}>Close</button> */}
                   <div className="flex w-full justify-between p-4 outline-none text-2xl bg-red-500 text-white rounded-t-lg">
                     <span>Contact the designers</span>
@@ -50,26 +72,36 @@ const Modal = ({ open, onClose }) => {
                         alt="interior"
                         className="h-2/3 w-full rounded-lg"
                       />
-                      <div class="flex justify-around w-full">
-                        <input
-                          className="bg-red-500 h-5 w-5 text-white"
-                          type="checkbox"
-                          value=""
-                          id="flexCheckDefault"
-                          name="checkboxUpdate"
-                        />
+                      <div className="flex justify-evenly w-full items-center">
                         <label
-                          class="inline-block text-gray-800 text-md"
-                          for="flexCheckDefault"
+                          class="block tracking-wide text-gray-700 text-md font-bold mb-2"
+                          for="grid-state"
                         >
-                          Send updates on whatsapp
+                          Want updates on whatsapp?
                         </label>
+                        <div class="relative w-2/5">
+                          <select
+                            class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="grid-state"
+                            name="checkboxUpdate"
+                          >
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg
+                              class="fill-current h-4 w-4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                            >
+                              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div
                       className="lg:w-1/2 md:w-full max-w-lg"
-                      // ref={form}
-                      // onSubmit={closePopup}
                       autoComplete="off"
                     >
                       <div class="w-full px-3 my-3 md:mb-0">
@@ -88,7 +120,7 @@ const Modal = ({ open, onClose }) => {
                             <option>Recidential/Home</option>
                             <option>Office</option>
                             <option>Store</option>
-                            <option>Cafe/Restaurant</option>
+                            <option>Cafe/Restaurant/QSR</option>
                             <option>Other</option>
                           </select>
                           <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
@@ -113,7 +145,7 @@ const Modal = ({ open, onClose }) => {
                           <select
                             class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                             id="grid-state"
-                            name="spaceType"
+                            name="location"
                           >
                             <option>Mumbai</option>
                             <option>Pune</option>
@@ -185,7 +217,6 @@ const Modal = ({ open, onClose }) => {
                         <button
                           className="uppercase bg-red-500 text-white font-bold hover:text-red-600 hover:bg-white border-2 hover:border-red-600 w-full py-1 px-3 transition-all delay-75 rounded-xl text-center"
                           type="submit"
-                          onClick={closePopup}
                         >
                           Submit
                         </button>

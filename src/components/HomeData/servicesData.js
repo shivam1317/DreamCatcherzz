@@ -6,10 +6,10 @@ const serviceData = [
     buttonText: "Give us call!",
   },
   {
-    src: "./images/Services/home/home1.jpg",
+    src: "./images/Services/interior/2.jpg",
     description:
       "Our interior service is best in the world. Call us now for design work",
-    buttonText: "Talk with us!",
+    buttonText: "Give us call!",
   },
   {
     src: "./images/Services/cafe/cafe1.jpg",
@@ -18,19 +18,19 @@ const serviceData = [
     buttonText: "Ask us now!",
   },
   {
-    src: "./images/Services/kitchen/k1.jpg",
+    src: "./images/Services/cafe/cafe2.jpg",
     description:
       "Our interior service is best in the world. Call us now for design work",
-    buttonText: "Book an appointment",
-  },
-  {
-    src: "./images/Services/office/o1.jpg",
-    description:
-      "Our interior service is best in the world. Call us now for design work",
-    buttonText: "Contact the designer",
+    buttonText: "Ask us now!",
   },
   {
     src: "./images/Services/store/s1.jpg",
+    description:
+      "Our interior service is best in the world. Call us now for design work",
+    buttonText: "Contact us",
+  },
+  {
+    src: "./images/Services/store/s2.jpg",
     description:
       "Our interior service is best in the world. Call us now for design work",
     buttonText: "Contact us",
