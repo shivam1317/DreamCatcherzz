@@ -93,6 +93,14 @@ function Home() {
           );
         })}
       </div>
+      <div className="w-full flex justify-center items-center my-5">
+        <a
+          className="bg-red-500 text-white hover:bg-white hover:text-red-500 transition-all ease-in-out p-3 text-xl hover:border-red-500 border-2 rounded-lg my-5 font-bold"
+          href="/contact"
+        >
+          Contact Us
+        </a>
+      </div>
       {/* <div>
         <button onClick={() => setIsOpen(true)}>Open modal</button>
         <Modal open={isOpen} onClose={() => setIsOpen(false)}></Modal>
