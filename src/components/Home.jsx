@@ -15,6 +15,7 @@ import { customerData } from "./HomeData/customerData";
 import "../css/preview.css";
 import Footer from "./Footer";
 import "../css/magazine.css";
+import provideData from "./HomeData/provideData";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 function Home() {
@@ -72,6 +73,23 @@ function Home() {
           cupiditate, quo corporis obcaecati ad. Officia, perspiciatis id
           molestiae distinctio maiores perferendis quod alias.
         </div>
+      </div>
+      <div className="w-full flex justify-center items-center">
+        <h1 className="text-center my-5 text-3xl lg:w-1/2 md:w-full font-bold bg-red-500 text-white p-5 rounded-xl">
+          Why Choose Dreamcatcherzz?
+        </h1>
+      </div>
+      <div className="w-full flex justify-evenly items-center flex-wrap">
+        {provideData.map((data) => {
+          return (
+            <div className="flex flex-col lg:w-1/3 md:w-full justify-center items-center lg:mx-5 md:mx-2 my-5 provideDiv p-3 rounded-lg">
+              <img src={data.img} alt="provideImg" className="w-4/5 h-60" />
+              <p className="text-lg font-bold text-center my-3 p-3 rounded-lg">
+                {data.text}
+              </p>
+            </div>
+          );
+        })}
       </div>
       {/* <div>
         <button onClick={() => setIsOpen(true)}>Open modal</button>
