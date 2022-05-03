@@ -66,12 +66,14 @@ function Home() {
       </Swiper>
       <div className="flex lg:justify-evenly md:justify-center align-center h-fit lg:p-10 md:p-5 w-full flex-wrap">
         <YoutubeEmbed />
-        <div className="inline h-auto  lg:my-auto my-10 lg:w-1/3 md:w-full text-center">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga error
-          odit et nihil placeat deleniti! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Repellat tenetur ipsa nesciunt hic cum, nulla iure,
-          cupiditate, quo corporis obcaecati ad. Officia, perspiciatis id
-          molestiae distinctio maiores perferendis quod alias.
+        <div className="inline h-auto  lg:my-auto my-10 lg:w-1/3 md:w-full text-center p-5 lg:p-1">
+          we are sharing this clients' Review video with actual pics of how and
+          why they appointed us to design and execute their 3bhk apartment in
+          just 50 days . This is in the Pink City Jaipur, Rajasthan. we have
+          done this work with enthusiasm, superb energy & excitement with all of
+          you. Meet the two of us in this video sharing how the Brand Kota
+          Kachori came into Life in 2013 and how this store was visualized and
+          has elements from Rajasthan and especially Jaipur
         </div>
       </div>
       <div className="w-full flex justify-center items-center">
@@ -168,9 +170,12 @@ function Home() {
                   className="h-8 w-8 ml-auto"
                 />
               </div>
-              <p className=" mb-3 text-right italic font-bold bg-gray-100 rounded-b-xl text-xl p-5 w-full">
+              <a
+                href={magazine.link}
+                className=" mb-3 text-right italic font-bold bg-gray-100 rounded-b-xl text-xl p-5 w-full"
+              >
                 {magazine.mname}
-              </p>
+              </a>
             </SwiperSlide>
           );
         })}
