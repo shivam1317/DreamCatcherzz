@@ -128,7 +128,27 @@ const Footer = () => {
         </div>
         <hr className="border-2 border-white w-full" />
         <p className="text-white text-center w-full font-bold text-2xl my-3">
-          Made by :- TrignoOs Group
+          Made by :-{" "}
+          <a
+            href="https://www.linkedin.com/in/krunal-rane-4178a01b4/"
+            target="_blank"
+          >
+            Krunal Rane
+          </a>
+          ,{" "}
+          <a
+            href="https://www.linkedin.com/in/shivam-danawale-b9a8a21b4/"
+            target="_blank"
+          >
+            Shivam Danawale
+          </a>
+          ,{" "}
+          <a
+            href="https://www.linkedin.com/in/furqan-amiri-499a66178/"
+            target="_blank"
+          >
+            Furqan Amiri
+          </a>
         </p>
       </div>
     </>

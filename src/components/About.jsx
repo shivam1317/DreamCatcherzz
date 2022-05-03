@@ -20,24 +20,23 @@ function About() {
             data-aos-duration="4000"
           />
           <div className=" inline-flex align-top my-10  h-fit lg:w-1/2 md:w-3/4 text-sm">
-            Dreamcatcherzz formerly known as KSR Design Studio is lead by
-            Product Designer : Kashyap S Rawat &amp; Interior Designer : Shilpa
-            Rawat. Kashyap Rawat started his career in 2010 with his first
-            project of doing a chandelier for Taj mahal palace Hotel , Mumbai,
-            followed by the project of designing Signs for Taj Falaknuma Palace.
-            His work and story have been covered in magazines/ newspapers like
-            Home Review (July 2014), Creative gaga, ET wealth and TOI . Kashyap
-            also got recognized by Home &amp; Design Trends (July 2017 issue)
-            amongst the selected and most Innovative Lighting designers of
-            India. He has worked on Projects for Brands like Taj Palace hotels,
-            JWT, Palladium,India International Jewellery Show, Melissa shoes
-            Launch and had done many installations at Kalaghoda Arts Festival
-            since 2009. Kashyap also transformed his hobby &amp; addiction of
-            accessory into a business with a practical use for it, Check
-            @vaultrail for that ( VAULT TRAIL) . Kashyap is also a fitness
-            enthusiast pursuing crossfit, yoga, dace fitness. In 2017, to expand
-            its portfolio to Interior Design , KSR Design Studio was renamed to
-            Dreamcatcherzz .
+            “We understand & catch your dream space ideas, convert them into
+            real design concepts & then execute it hassle free for our clients.”
+            Dreamcatcherzz Dreamcatcherzz is Lead by two main Designers : Shilpa
+            Shah Rawat and Kashyap Rawat. Most clients describe the work of
+            Shilpa & Kashyap as ‘ Dream come true’ . That’s why the name
+            Dreamcatcherzz.
+            <br></br>
+            <br></br>
+            In short Span of 4 years, Dreamcatcherzz has Designed and executed
+            many projects in different cities across India ( Mumbai, Jaipur,
+            Bangalore, Vadodara, Jhalawar, Kota) projects are in the these
+            categories : Apartment Design Projects , Bungalow design, Store &
+            Restaurant Design, Quick Service Restaurant (QSR), Food truck
+            design, Toy Library in a truck & commercial office spaces. clients
+            Some of the unique work are done for clients like Taj Mahal Palace
+            hotel, Mumbai. Taj Falaknuma Palce hotel, Hyderabad, 99pancakes,
+            Kota Kachori (Kota, Jaipur ,bangalore), Munot Ornaments Annex,
           </div>
 
           {/* <span className="mx-10"> oleo olekaoisj uogyahysHAUasv hjgCVAchievemnts and magazine reviews</span> */}
@@ -45,17 +44,15 @@ function About() {
 
         <div className="w-full align-center inline-flex lg:my-10 md:my-0 flex-wrap-reverse justify-evenly p-5 bg-gray-100">
           <div className=" inline-flex align-between my-20 h-fit lg:w-1/2 md:w-3/4">
-            Dreamcatcherzz is Lead by two main Designers : Shilpa Shah Rawat (
-            Interior Designer) and Kashyap Rawat( Product Designer) . Shilpa has
-            Studied interior design From M.S University, Vadodara. She has
-            worked 5 years as senior Interior Designer &amp; Décor Stylist in
-            top architectural firm in Vadodara (Baroda) before starting
+            Shilpa has Studied interior design From M.S University, Vadodara.
+            She has worked 5 years as senior Interior Designer & Décor Stylist
+            in top architectural firm in Vadodara (Baroda) before starting
             Dreamcatcherzz with her husband Kashyap .She brings her expertise of
-            looking at spaces as whole unit and giving Soul &amp; life to them.
+            looking at spaces as whole unit and giving Soul & life to them.
             Shilpa has an eye to beauty , elegance with simplicity and thus her
             décor styling for any space is fabulous . She has worked on various
             reputed projects starting from apartments, to bungalows, banquets,
-            offices &amp; commercial Spaces.
+            offices & commercial Spaces.
           </div>
           <div className="flex flex-col justify-evenly items-center">
             <img
@@ -90,18 +87,16 @@ function About() {
           <div className=" inline-flex align-between my-20  h-fit  lg:w-1/2 md:w-3/4">
             Kashyap has done his Advance Product Design from Raffles Design
             International ( Singapore institute). Before Product design Kashyap
-            had already gained knowledge in the stream of graphic design &amp;
+            had already gained knowledge in the stream of graphic design &
             interior design along with his graduation Degree in B.M.S
-            (Marketing). He has great expertise in lighting, furniture &amp;
-            goes deeper in details of production , manufacturing , fabrication.
+            (Marketing). He has great expertise in lighting, furniture & goes
+            deeper in details of production , manufacturing , fabrication.
             Kashyap has won recognition in Kalaghoda Arts Festival for his
-            delightful Lighting installations. Infact his career started with
-            making custom Chandelier and décor items only for Taj Mahal Palace,
-            MUMBAI. He then also did all signages design &amp; execution of Taj
-            Falaknuma Palace, Hyderabad. He also did Décor Lighting for
-            Palladium Mall Mumbai. He has been covered by many reputed magazines
-            for his innovative design work and has been recognised as ‘Top few
-            innovative lighting designers of India’.
+            delightful Lighting installations and has been recognised as ‘Top
+            Innovative lighting designers of India’. The duo also won
+            Recognition of Masters design 2020 for their great design &
+            execution of the Food store & QSR done in Jaipur for the Brand Kota
+            Kachori.
           </div>
 
           {/* <span className="mx-10"> oleo olekaoisj uogyahysHAUasv hjgCVAchievemnts and magazine reviews</span> */}

@@ -2,37 +2,37 @@ const serviceData = [
   {
     src: "./images/Services/interior/1.jpg",
     description:
-      "Our interior service is best in the world. Call us now for design work",
+      "This the dining room ",
     buttonText: "Give us call!",
   },
   {
     src: "./images/Services/interior/2.jpg",
     description:
-      "Our interior service is best in the world. Call us now for design work",
+      "Sofa alignment in the center hall",
     buttonText: "Give us call!",
   },
   {
     src: "./images/Services/cafe/cafe1.jpg",
     description:
-      "Our interior service is best in the world. Call us now for design work",
+      "customise office as per your desires",
     buttonText: "Ask us now!",
   },
   {
     src: "./images/Services/cafe/cafe2.jpg",
     description:
-      "Our interior service is best in the world. Call us now for design work",
+      "This is the cafe well designed by us",
     buttonText: "Ask us now!",
   },
   {
     src: "./images/Services/store/s1.jpg",
     description:
-      "Our interior service is best in the world. Call us now for design work",
+      "This is the Kota kachori store in Rajasthan",
     buttonText: "Contact us",
   },
   {
     src: "./images/Services/store/s2.jpg",
     description:
-      "Our interior service is best in the world. Call us now for design work",
+      "Product alignment in the store.",
     buttonText: "Contact us",
   },
 ];
