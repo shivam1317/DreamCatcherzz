@@ -43,12 +43,12 @@ function Home() {
         {serviceData.map((data, index) => {
           return (
             <SwiperSlide
-              className="mySwiperSlide1 flex items-center justify-evenly p-10 bg-gray-100 flex-wrap-reverse"
+              className="mySwiperSlide1 flex items-center justify-evenly lg:p-10 md:p-0 bg-gray-100 flex-wrap-reverse"
               key={index}
             >
               <div className="flex justify-items-start items-center flex-col p-5 lg:w-2/5 md:w-full">
                 <h2 className="font-bold text-2xl self-start">
-                  This is heading
+                  {data.heading}
                 </h2>
                 <p className="text-lg my-1 self-start">{data.description}</p>
                 <button className="bg-red-600 text-white hover:bg-white hover:text-red-600 transition-all ease-in-out p-3 hover:border-red-600 border-2 rounded-lg my-2 self-start">
@@ -58,26 +58,22 @@ function Home() {
               <img
                 src={data.src}
                 alt="preview"
-                className="lg:w-1/2 md:w-full h-full rounded-xl"
+                className="lg:w-1/2 md:w-full h-full"
               />
             </SwiperSlide>
           );
         })}
       </Swiper>
       <div className="flex lg:justify-evenly md:justify-center align-center h-fit lg:p-10 md:p-5 w-full flex-wrap">
-        <YoutubeEmbed />
-        <div className="inline h-auto  lg:my-auto my-10 lg:w-1/3 md:w-full text-center p-5 lg:p-1">
-          we are sharing this clients' Review video with actual pics of how and
-          why they appointed us to design and execute their 3bhk apartment in
-          just 50 days . This is in the Pink City Jaipur, Rajasthan. we have
-          done this work with enthusiasm, superb energy & excitement with all of
-          you. Meet the two of us in this video sharing how the Brand Kota
-          Kachori came into Life in 2013 and how this store was visualized and
-          has elements from Rajasthan and especially Jaipur
+        <div className="w-full flex justify-center items-center">
+          <h1 className="text-center my-3 text-3xl w-full font-bold bg-red-500 text-white p-5">
+            Our Project Videos
+          </h1>
         </div>
+        <YoutubeEmbed />
       </div>
       <div className="w-full flex justify-center items-center">
-        <h1 className="text-center my-5 text-3xl lg:w-1/2 md:w-full font-bold bg-red-500 text-white p-5 rounded-xl">
+        <h1 className="text-center my-3 text-3xl lg:w-1/2 md:w-full font-bold bg-red-500 text-white p-5 lg:rounded-md md:rounded-none">
           Why Choose Dreamcatcherzz?
         </h1>
       </div>
@@ -94,12 +90,12 @@ function Home() {
         })}
       </div>
       <div className="w-full flex justify-center items-center my-5">
-        <a
+        <button
+          onClick={() => setIsOpen(true)}
           className="bg-red-500 text-white hover:bg-white hover:text-red-500 transition-all ease-in-out p-3 text-xl hover:border-red-500 border-2 rounded-lg my-5 font-bold"
-          href="/contact"
         >
           Contact Us
-        </a>
+        </button>
       </div>
       {/* <div>
         <button onClick={() => setIsOpen(true)}>Open modal</button>
