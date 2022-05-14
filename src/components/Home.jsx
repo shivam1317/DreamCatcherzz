@@ -61,7 +61,7 @@ function Home() {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        className="mySwiper1 p-3"
+        className="mySwiper1"
       >
         {serviceData.map((data, index) => {
           return (
