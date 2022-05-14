@@ -1,39 +1,39 @@
 const serviceData = [
   {
-    src: "./images/Services/interior/1.jpg",
+    src: "./images/preview/1.jpg",
+    heading : "Center Hall",
     description:
-      "This the dining room ",
+      "This is the Center Hall",
     buttonText: "Give us call!",
   },
   {
-    src: "./images/Services/interior/2.jpg",
+    src: "./images/preview/2.jpg",
+    heading : "Meet our Designers",
     description:
       "Sofa alignment in the center hall",
     buttonText: "Give us call!",
   },
   {
-    src: "./images/Services/cafe/cafe1.jpg",
+    src: "./images/preview/3.jpg",
+    heading : "Kitchen",
     description:
       "customise office as per your desires",
     buttonText: "Ask us now!",
   },
   {
-    src: "./images/Services/cafe/cafe2.jpg",
+    src: "./images/preview/4.jpg",
+    heading : "Kota Kachori",
     description:
       "This is the cafe well designed by us",
     buttonText: "Ask us now!",
   },
   {
-    src: "./images/Services/store/s1.jpg",
+    src: "./images/preview/5.jpg",
+    heading : "Bedroom",
     description:
       "This is the Kota kachori store in Rajasthan",
     buttonText: "Contact us",
   },
-  {
-    src: "./images/Services/store/s2.jpg",
-    description:
-      "Product alignment in the store.",
-    buttonText: "Contact us",
-  },
+  
 ];
 export { serviceData };

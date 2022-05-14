@@ -4,20 +4,25 @@ import "../css/navbar.css";
 
 function Navbar() {
   const [icon, setIcon] = useState(true);
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const toggleFun = () => {
     setShow(!show);
     setIcon(!icon);
   };
+  const closeMobile = () => {
+    if (window.innerWidth <= 768 && show) {
+      setShow(false);
+      setIcon(!icon);
+    }
+  };
   useEffect(() => {
-    const hideMenu = () => {
-      if (window.innerWidth > 768 && !show) {
-        setShow(true);
-        console.log("i resizeedddd");
-      } else if (window.innerWidth <= 768 && show) {
-        setShow(false);
-      }
-    };
+    if (window.innerWidth > 768 && !show) {
+      setShow(true);
+      console.log("i resizeedddd");
+    } else if (window.innerWidth <= 768 && show) {
+      setShow(false);
+    }
+
     if (window.innerWidth <= 768 && show) {
       let data = document.getElementsByClassName("toggle");
       for (let i = 0; i < data.length; i++) {
@@ -26,13 +31,9 @@ function Navbar() {
         });
       }
     }
-    window.addEventListener("load", hideMenu);
-    return () => {
-      window.removeEventListener("load", hideMenu);
-    };
-  });
+  }, []);
   return (
-    <div className="py-14">
+    <div className="py-8">
       <nav className="flex z-10 fixed top-0 inset-x-0 items-center bg-white p-3 flex-wrap md:shadow-xl text-lg">
         <a href="/" className="p-2 mr-4 inline-flex items-center">
           <div className="unnamed">
@@ -47,7 +48,7 @@ function Navbar() {
             <img
               src="./images/dreamcatcherzz_name_logo.png"
               alt="name-logo"
-              className="object-scale-down h-8 w-30 p-1"
+              className="object-scale-down h-9 w-30 p-1"
             />
           </div>
         </a>
@@ -96,6 +97,7 @@ function Navbar() {
                 to="/"
                 className="krunal-ul toggle lg:inline-flex lg:w-auto px-3 py-2 rounded text-black font-bold hover:text-bold ml-5"
                 activeClassName="active"
+                onClick={closeMobile}
               >
                 <span>Home</span>
               </NavLink>
@@ -103,6 +105,7 @@ function Navbar() {
                 to="/about"
                 className="krunal-ul toggle lg:inline-flex lg:w-auto px-3 py-2 rounded text-black font-bold hover:text-bold ml-5"
                 activeClassName="active"
+                onClick={closeMobile}
               >
                 <span>About</span>
               </NavLink>
@@ -110,6 +113,7 @@ function Navbar() {
                 to="/services"
                 className="krunal-ul toggle lg:inline-flex lg:w-auto px-3 py-2 rounded text-black font-bold hover:text-bold ml-5"
                 activeClassName="active"
+                onClick={closeMobile}
               >
                 <span>Services</span>
               </NavLink>
@@ -117,12 +121,14 @@ function Navbar() {
                 to="/faq"
                 className="krunal-ul toggle lg:inline-flex lg:w-auto px-3 py-2 rounded text-black font-bold hover:text-bold ml-5"
                 activeClassName="active"
+                onClick={closeMobile}
               >
                 <span>FAQ's</span>
               </NavLink>
               <Link
                 to="/contact"
                 className="toggle lg:inline-flex lg:w-auto px-3 py-2 rounded-2xl text-white font-bold ml-5 bg-red-600 border-2 hover:border-red-600 hover:bg-white hover:text-red-600 transition-all duration-500"
+                onClick={closeMobile}
               >
                 <span>Contact Us</span>
               </Link>
