@@ -16,15 +16,38 @@ import "../css/preview.css";
 import Footer from "./Footer";
 import "../css/magazine.css";
 import provideData from "./HomeData/provideData";
+import projectData from "./HomeData/projectData";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
+
+const services = [
+  {
+    heading: "Interior Design Homes",
+    id: "Interior",
+    src: "./images/Services/interior.svg",
+    description: "We will design your interior",
+  },
+  {
+    heading: "Cafe Restaurants QSR",
+    id: "Cafe",
+    src: "./images/Services/cafe.svg",
+    description: "We also design cafe",
+  },
+  {
+    heading: "Retail Stores",
+    id: "Store",
+    src: "./images/Services/store.svg",
+    description: "We also decorate your store",
+  },
+];
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (!submitted) {
       setTimeout(() => {
         setIsOpen(true);
-      }, 15000);
+      }, 25000);
     }
   }, []);
   return (
@@ -51,8 +74,11 @@ function Home() {
                   {data.heading}
                 </h2>
                 <p className="text-lg my-1 self-start">{data.description}</p>
-                <button className="bg-red-600 text-white hover:bg-white hover:text-red-600 transition-all ease-in-out p-3 hover:border-red-600 border-2 rounded-lg my-2 self-start">
-                  <NavLink to="/contact">{data.buttonText}</NavLink>
+                <button
+                  onClick={() => setIsOpen(true)}
+                  className="bg-red-600 text-white hover:bg-white hover:text-red-600 transition-all ease-in-out p-3 hover:border-red-600 border-2 rounded-lg my-2 self-start"
+                >
+                  <p>{data.buttonText}</p>
                 </button>
               </div>
               <img
@@ -80,7 +106,7 @@ function Home() {
       <div className="w-full flex justify-evenly items-center flex-wrap">
         {provideData.map((data) => {
           return (
-            <div className="flex flex-col w-2/5 lg:w-1/3 justify-center items-center lg:mx-5 mx-3 my-5 provideDiv p-3 rounded-lg">
+            <div className="flex flex-col w-2/5 lg:w-1/3 justify-center items-center lg:mx-5 mx-1 my-2 lg:my-5 provideDiv p-3 rounded-lg">
               <img
                 src={data.img}
                 alt="provideImg"
@@ -93,7 +119,7 @@ function Home() {
           );
         })}
       </div>
-      <div className="w-full flex justify-center items-center my-5">
+      <div className="w-full flex justify-center items-center lg:my-5 my-1">
         <button
           onClick={() => setIsOpen(true)}
           className="bg-red-500 text-white hover:bg-white hover:text-red-500 transition-all ease-in-out p-3 text-xl hover:border-red-500 border-2 rounded-lg my-5 font-bold"
@@ -101,15 +127,34 @@ function Home() {
           Contact Us
         </button>
       </div>
-      {/* <div>
-        <button onClick={() => setIsOpen(true)}>Open modal</button>
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}></Modal>
-      </div> */}
-      <div className="flex items-center justify-between my-5  font-bold bg-red-500 text-white p-5">
+      <div className="flex items-center justify-center lg:my-5 my-2 font-bold bg-red-500 text-white p-5">
         <h1 className="text-3xl">Our Services </h1>
-        <button className=" lg:inline-flex lg:w-auto rounded-2xl text-white font-bold ml-5 bg-transparent border-2 hover:border-white hover:bg-white hover:text-red-500 transition-all duration-500 md:text-center p-3">
-          <NavLink to="/services">Show All Services</NavLink>
-        </button>
+      </div>
+      <div className="my-3">
+        <h1 className="font-bold text-center text-2xl">What We Provide!</h1>
+      </div>
+      <div className="w-full flex flex-wrap justify-evenly">
+        {services.map((service) => {
+          return (
+            <Link
+              className="lg:w-1/4 flex justify-center items-center mx-5 lg:my-4 my-1 md:w-2/5 sm:w-full cursor-pointer hover:bg-gray-200 p-1 rounded-xl"
+              to="/services"
+            >
+              <img
+                src={service.src}
+                alt="service"
+                className="lg:w-3/5 w-2/5 mr-2"
+              />
+              <div className="flex flex-col justify-around">
+                <h3 className="text-lg font-bold">{service.heading}</h3>
+                <span className="text-sm">{service.description}</span>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+      <div className="my-3">
+        <h1 className="font-bold text-center text-2xl">Our Projects</h1>
       </div>
       <Swiper
         slidesPerView={window.innerWidth <= 768 ? 1 : 3}
@@ -120,17 +165,17 @@ function Home() {
           delay: 3000,
           disableOnInteraction: false,
         }}
-        className=" w-full my-10"
+        className=" w-full my-3"
         loopFillGroupWithBlank={false}
       >
-        {serviceData.map((service, index) => {
+        {projectData.map((project, index) => {
           return (
             <SwiperSlide
               className="my-3 p-3 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-xl"
               key={index}
             >
-              <img src={service.src} alt="Cafe" className="w-full rounded-lg" />
-              <p className="my-3">{service.description}</p>
+              <img src={project.src} alt="Cafe" className="w-full rounded-lg" />
+              <p className="my-3">{project.description}</p>
             </SwiperSlide>
           );
         })}
@@ -138,7 +183,7 @@ function Home() {
       <div className="flex justify-center items-center">
         <button
           onClick={() => setIsOpen(true)}
-          className="bg-red-500 text-white hover:bg-white hover:text-red-500 transition-all ease-in-out p-3 text-xl hover:border-red-500 border-2 rounded-lg my-5 font-bold"
+          className="bg-red-500 text-white hover:bg-white hover:text-red-500 transition-all ease-in-out p-3 text-xl hover:border-red-500 border-2 rounded-lg my-3 font-bold"
         >
           Contact the designers
         </button>
@@ -165,7 +210,10 @@ function Home() {
               className="p-3 my-3 rounded-lg flex flex-col shadow-slate-300 shadow-xl"
               key={index}
             >
-              <div className="text-center bg-blue-500 text-white w-full p-3 italic text-md rounded-t-xl ">
+              <p className=" mb-3 text-left italic font-bold bg-gray-100 rounded-b-xl text-xl p-5 w-full">
+                {magazine.mname}
+              </p>
+              <div className="text-center  w-full p-3 italic text-md rounded-t-xl ">
                 <img
                   src="./images/left-quote.png"
                   alt="left-quote"
@@ -180,9 +228,11 @@ function Home() {
               </div>
               <a
                 href={magazine.link}
-                className=" mb-3 text-right italic font-bold bg-gray-100 rounded-b-xl text-xl p-5 w-full"
+                target="_blank"
+                className="text-center self-center bg-red-600 text-white hover:bg-red-500 p-3 rounded-lg"
+                rel="noreferrer"
               >
-                {magazine.mname}
+                Read More
               </a>
             </SwiperSlide>
           );
@@ -190,7 +240,7 @@ function Home() {
       </Swiper>
       <div className="flex justify-center items-center w-full ">
         <a
-          href="https://wa.me/918469082215"
+          href="https://wa.me/919892144019"
           target="_blank"
           className="bg-red-500 text-white hover:bg-white hover:text-red-500 transition-all ease-in-out p-3 text-xl hover:border-red-500 border-2 rounded-lg my-3 font-bold flex justify-center items-center"
           rel="noreferrer"

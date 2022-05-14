@@ -13,10 +13,10 @@ const Modal = ({ open, onClose }) => {
 
     emailjs
       .sendForm(
-        "service_6zz59du",
-        "template_fw6atxr",
+        "service_l54ojkf",
+        "template_6468bcf",
         form.current,
-        "user_9cabxlWaMreMwWbuqzhvS"
+        "rnnmwdZX6ox-gTk3r"
       )
       .then(
         (result) => {

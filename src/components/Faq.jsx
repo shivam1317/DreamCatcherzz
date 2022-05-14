@@ -4,8 +4,12 @@ import "../css/faq.css";
 import "../css/navbar.css";
 import data from "../js/faqData";
 import Footer from "./Footer";
+import { useEffect } from "react";
 
 function Faq() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [selected, setSelected] = useState(null);
   const toggle = (i) => {
     if (selected == i) {

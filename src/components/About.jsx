@@ -2,24 +2,16 @@ import AOS from "aos";
 import React, { useEffect } from "react";
 import "aos/dist/aos.css";
 import Footer from "./Footer";
+import "../css/about.css";
 function About() {
   useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>
       <div className="h-fitcontent w-full flex-row my-5 " id="container">
         <div className=" flex-wrap w-full inline-flex align-center justify-evenly p-5 ">
-          <img
-            className=" inline shadow-2xl rounded-xl"
-            src="./images/logofinal.png"
-            alt="The team of Dreamcatcherzzz"
-            data-aos="flip-left"
-            data-aos-duration="4000"
-          />
-          <div className=" inline-flex align-top my-10  h-fit lg:w-1/2 md:w-3/4 text-sm">
+          <p className=" inline-flex align-top my-5  h-fit lg:w-4/5 md:w-3/4 text-md">
             “We understand & catch your dream space ideas, convert them into
             real design concepts & then execute it hassle free for our clients.”
             Dreamcatcherzz Dreamcatcherzz is Lead by two main Designers : Shilpa
@@ -34,16 +26,21 @@ function About() {
             categories : Apartment Design Projects , Bungalow design, Store &
             Restaurant Design, Quick Service Restaurant (QSR), Food truck
             design, Toy Library in a truck & commercial office spaces. clients
-            Some of the unique work are done for clients like Taj Mahal Palace
-            hotel, Mumbai. Taj Falaknuma Palce hotel, Hyderabad, 99pancakes,
-            Kota Kachori (Kota, Jaipur ,bangalore), Munot Ornaments Annex,
-          </div>
+            Some of the unique work are done for clients like
+          </p>
 
           {/* <span className="mx-10"> oleo olekaoisj uogyahysHAUasv hjgCVAchievemnts and magazine reviews</span> */}
+          <ul className="list-disc">
+            <li>Taj Mahal Palace hotel, Mumbai.</li>
+            <li>Taj Falaknuma Palce hotel, Hyderabad.</li>
+            <li>99pancakes.</li>
+            <li>Kota Kachori (Kota, Jaipur ,bangalore)</li>
+            <li>Munot Ornaments Annex</li>
+          </ul>
         </div>
 
         <div className="w-full align-center inline-flex lg:my-10 md:my-0 flex-wrap-reverse justify-evenly p-5 bg-gray-100">
-          <div className=" inline-flex align-between my-20 h-fit lg:w-1/2 md:w-3/4">
+          <div className=" inline-flex align-between lg:my-20 my-5 h-fit lg:w-1/2 md:w-3/4">
             Shilpa has Studied interior design From M.S University, Vadodara.
             She has worked 5 years as senior Interior Designer & Décor Stylist
             in top architectural firm in Vadodara (Baroda) before starting
@@ -56,11 +53,9 @@ function About() {
           </div>
           <div className="flex flex-col justify-evenly items-center">
             <img
-              className=" rounded-xl inline shadow-2xl lg:mr-5 md:mr-0 h-96 w-64"
-              src="./images/Shilpamaam.jpeg"
+              className="inline shadow-2xl lg:mr-5 md:mr-0 w-64 h-80"
+              src="./images/shilpamaam.jpeg"
               alt="The team of Dreamcatcherzzz"
-              data-aos="fade-left"
-              data-aos-duration="4000"
             />
 
             <div className="mt-3 text-xl text-red-600 font-bold">
@@ -76,15 +71,13 @@ function About() {
               className=" inline shadow-2xl rounded-xl h-96 w-64"
               src="./images/kashyapsir.jpeg"
               alt="The team of Dreamcatcherzzz"
-              data-aos="fade-right"
-              data-aos-duration="4000"
             />
             <div className="text-left text-xl text-red-600 font-bold">
               KASHYAP RAWAT
             </div>
           </div>
 
-          <div className=" inline-flex align-between my-20  h-fit  lg:w-1/2 md:w-3/4">
+          <div className=" inline-flex align-between lg:my-20 my-5 h-fit  lg:w-1/2 md:w-3/4">
             Kashyap has done his Advance Product Design from Raffles Design
             International ( Singapore institute). Before Product design Kashyap
             had already gained knowledge in the stream of graphic design &

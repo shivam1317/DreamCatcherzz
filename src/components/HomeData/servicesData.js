@@ -1,39 +1,33 @@
 const serviceData = [
   {
     src: "./images/preview/1.jpg",
-    heading : "Center Hall",
-    description:
-      "This is the Center Hall",
-    buttonText: "Give us call!",
+    heading: "Jaipur Home",
+    description: "Dream Home Interior ",
+    buttonText: "Enquire Now",
   },
   {
     src: "./images/preview/2.jpg",
-    heading : "Meet our Designers",
-    description:
-      "Sofa alignment in the center hall",
-    buttonText: "Give us call!",
+    heading: "Meet The Designers",
+    description: "Shilpa Rawat & Kashyap Rawat",
+    buttonText: "Talk To Designers",
   },
   {
     src: "./images/preview/3.jpg",
-    heading : "Kitchen",
-    description:
-      "customise office as per your desires",
-    buttonText: "Ask us now!",
+    heading: "Jaipur Home Kitchen",
+    description: "Modular Kitchen",
+    buttonText: "Enquire Now",
   },
   {
     src: "./images/preview/4.jpg",
-    heading : "Kota Kachori",
-    description:
-      "This is the cafe well designed by us",
-    buttonText: "Ask us now!",
+    heading: "Kota Kachori Store",
+    description: "Design Your Store Interior + Exterior",
+    buttonText: "Book Consultation",
   },
   {
     src: "./images/preview/5.jpg",
-    heading : "Bedroom",
-    description:
-      "This is the Kota kachori store in Rajasthan",
-    buttonText: "Contact us",
+    heading: "Marina Bedroom",
+    description: "Creative Bedroom Designs",
+    buttonText: "Book Appointment",
   },
-  
 ];
 export { serviceData };

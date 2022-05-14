@@ -5,58 +5,20 @@ import Cafe from "../Data/cafe/Cafe";
 import Store from "../Data/Store/Store";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Footer from "./Footer";
-
-const services = [
-  {
-    heading: "Interior Design Homes",
-    id: "Interior",
-    src: "./images/Services/interior.svg",
-    description: "We will design your interior",
-  },
-  {
-    heading: "Cafe Restaurants QSR",
-    id: "Cafe",
-    src: "./images/Services/cafe.svg",
-    description: "We also design cafe",
-  },
-  {
-    heading: "Retail Stores",
-    id: "Store",
-    src: "./images/Services/store.svg",
-    description: "We also decorate your store",
-  },
-];
+import { useEffect } from "react";
+import Unique from "../Data/UniqueServices/Unique";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
-      <h1 className="text-center text-2xl font-bold bg-red-500 text-white p-5 ">
-        What we provide
-      </h1>
-      <div className="w-full flex flex-wrap justify-evenly">
-        {services.map((service) => {
-          return (
-            <Link
-              className="lg:w-1/4 flex justify-center items-center mx-5 my-3 md:w-2/5 sm:w-full cursor-pointer hover:bg-gray-200 p-2 rounded-xl"
-              to={service.id}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <img src={service.src} alt="service" className="w-3/5 mr-2" />
-              <div className="flex flex-col justify-around">
-                <h3 className="text-lg font-bold">{service.heading}</h3>
-                <span className="text-sm">{service.description}</span>
-              </div>
-            </Link>
-          );
-        })}
-      </div>
       <Interior />
       <Cafe />
       <Store />
-      <div className="flex justify-center items-center w-full mb-5 p-5">
+      <Unique />
+      <div className="flex justify-center items-center w-full mb-3 p-5">
         <button
           onClick={scroll.scrollToTop}
           className="bg-red-600 text-white hover:bg-white hover:text-red-600 transition-all ease-in-out p-3 hover:border-red-600 border-2 rounded-lg"

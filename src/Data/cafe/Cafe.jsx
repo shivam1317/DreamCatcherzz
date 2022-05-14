@@ -13,8 +13,8 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 const Cafe = () => {
   return (
     <>
-      <div className="my-20 w-full" id="Cafe">
-        <h1 className="text-center my-5 text-3xl font-bold bg-red-500 text-white p-5 ">
+      <div className="my-8 w-full" id="Cafe">
+        <h1 className="text-center my-5 text-3xl font-bold bg-red-500 text-white p-3 ">
           Cafe Restaurants QSR
         </h1>
         <Swiper
@@ -26,17 +26,16 @@ const Cafe = () => {
             delay: 3000,
             disableOnInteraction: false,
           }}
-          className="mySwiper w-full my-10"
+          className="mySwiper w-full my-5"
           loopFillGroupWithBlank={false}
         >
           {cafeData.map((data, index) => {
             return (
               <SwiperSlide
-                className="mySwiperSlide p-3 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-lg"
+                className="mySwiperSlide p-2 items-center justify-between rounded-lg flex flex-col shadow-slate-300 shadow-lg"
                 key={index}
               >
                 <img src={data.src} alt="Cafe" className="w-full rounded-lg" />
-                <p className="my-3">{data.description}</p>
               </SwiperSlide>
             );
           })}

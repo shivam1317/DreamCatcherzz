@@ -100,6 +100,7 @@ const Footer = () => {
           <p className="p-3 text-white text-center font-bold">
             Vastu & Energy Correction
           </p>
+          <p className="p-3 text-white text-center font-bold">Branding</p>
         </div>
         <div className="p-5 lg:w-1/5 h-full flex flex-col justify-evenly items-center mx-4 md:w-2/5">
           <p className="p-3 text-white text-center font-bold text-xl">
@@ -115,7 +116,7 @@ const Footer = () => {
             <span>dreamcatcherzzdesign@gmail.com</span>
           </p>
           <a
-            href="https://wa.me/918469082215"
+            href="https://wa.me/919892144019"
             className="flex justify-center bg-white p-2 rounded-lg m-3"
           >
             <img

@@ -3,18 +3,23 @@ import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./Footer";
+import { useEffect } from "react";
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_6zz59du",
-        "template_2fz4ys9",
+        "service_l54ojkf",
+        "template_eztwxy3",
         form.current,
-        "user_9cabxlWaMreMwWbuqzhvS"
+        "rnnmwdZX6ox-gTk3r"
       )
       .then(
         (result) => {
