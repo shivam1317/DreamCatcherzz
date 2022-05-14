@@ -114,14 +114,17 @@ const Footer = () => {
             />
             <span>dreamcatcherzzdesign@gmail.com</span>
           </p>
-          <p className="flex justify-center bg-white p-2 rounded-lg m-3">
+          <a
+            href="https://wa.me/918469082215"
+            className="flex justify-center bg-white p-2 rounded-lg m-3"
+          >
             <img
               src="./images/Footer/whatsapp.svg"
               alt="WhatsApp"
               className="h-7 w-7"
             />
             <span>+91-9892144019</span>
-          </p>
+          </a>
           <p className="p-3 text-white text-center font-bold">
             Malad (West), Mumbai. 400067
           </p>

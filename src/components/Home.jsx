@@ -80,9 +80,13 @@ function Home() {
       <div className="w-full flex justify-evenly items-center flex-wrap">
         {provideData.map((data) => {
           return (
-            <div className="flex flex-col lg:w-1/3 md:w-full justify-center items-center lg:mx-5 md:mx-2 my-5 provideDiv p-3 rounded-lg">
-              <img src={data.img} alt="provideImg" className="w-4/5 h-60" />
-              <p className="text-lg font-bold text-center my-3 p-3 rounded-lg">
+            <div className="flex flex-col w-2/5 lg:w-1/3 justify-center items-center lg:mx-5 mx-3 my-5 provideDiv p-3 rounded-lg">
+              <img
+                src={data.img}
+                alt="provideImg"
+                className="w-4/5 lg:h-60 h-20"
+              />
+              <p className="lg:text-lg text-sm font-bold text-center my-3 p-3 rounded-lg">
                 {data.text}
               </p>
             </div>
@@ -184,6 +188,21 @@ function Home() {
           );
         })}
       </Swiper>
+      <div className="flex justify-center items-center w-full ">
+        <a
+          href="https://wa.me/918469082215"
+          target="_blank"
+          className="bg-red-500 text-white hover:bg-white hover:text-red-500 transition-all ease-in-out p-3 text-xl hover:border-red-500 border-2 rounded-lg my-3 font-bold flex justify-center items-center"
+          rel="noreferrer"
+        >
+          <img
+            src="./images/Footer/whatsapp.svg"
+            alt="WhatsApp"
+            className="h-7 w-7 mx-2"
+          />
+          <span>Give Us A Call</span>
+        </a>
+      </div>
       <div className="flex items-center my-5 justify-center font-bold bg-red-500 text-white p-5">
         <h1 className="text-3xl text-center"> Customer review </h1>
       </div>

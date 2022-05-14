@@ -13,13 +13,3 @@
   background: #f3f4f6;
   box-shadow: 10px 10px 20px #dbdcdd, -10px -10px 20px #ffffff;
 }
-.provideDiv p {
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-  background: #f3f4f6;
-  box-shadow: 9px 9px 18px #dbdcdd, -9px -9px 18px #ffffff;
-}
-.provideDiv p:hover {
-  background: #f3f4f6;
-  box-shadow: inset 9px 9px 18px #dbdcdd, inset -9px -9px 18px #ffffff;
-}
