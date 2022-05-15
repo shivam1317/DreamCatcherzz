@@ -21,22 +21,22 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const services = [
   {
-    heading: "Interior Design Homes",
+    heading: "Home Interior Design",
     id: "interior",
     src: "./images/Services/interior.svg",
-    description: "We will design your interior",
+    description: "Click Here!",
   },
   {
-    heading: "Cafe Restaurants QSR",
+    heading: "Retail store/ Hotel Interior Design",
     id: "cafe",
     src: "./images/Services/cafe.svg",
-    description: "We also design cafe",
+    description: "Click Here!",
   },
   {
-    heading: "Retail Stores",
+    heading: "Restaurants/ Café/ QSR/ Food Truck",
     id: "store",
     src: "./images/Services/store.svg",
-    description: "We also decorate your store",
+    description: "Click Here!",
   },
 ];
 
