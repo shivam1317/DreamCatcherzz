@@ -13,7 +13,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 const Cafe = () => {
   return (
     <>
-      <div className="my-8 w-full" id="Cafe">
+      <div className="my-8 w-full" id="cafe">
         <h1 className="text-center my-5 text-3xl font-bold bg-red-500 text-white p-3 ">
           Cafe Restaurants QSR
         </h1>

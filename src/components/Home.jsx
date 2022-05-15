@@ -22,19 +22,19 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 const services = [
   {
     heading: "Interior Design Homes",
-    id: "Interior",
+    id: "interior",
     src: "./images/Services/interior.svg",
     description: "We will design your interior",
   },
   {
     heading: "Cafe Restaurants QSR",
-    id: "Cafe",
+    id: "cafe",
     src: "./images/Services/cafe.svg",
     description: "We also design cafe",
   },
   {
     heading: "Retail Stores",
-    id: "Store",
+    id: "store",
     src: "./images/Services/store.svg",
     description: "We also decorate your store",
   },
@@ -74,12 +74,18 @@ function Home() {
                   {data.heading}
                 </h2>
                 <p className="text-lg my-1 self-start">{data.description}</p>
-                <button
-                  onClick={() => setIsOpen(true)}
-                  className="bg-red-600 text-white hover:bg-white hover:text-red-600 transition-all ease-in-out p-3 hover:border-red-600 border-2 rounded-lg my-2 self-start"
-                >
-                  <p>{data.buttonText}</p>
-                </button>
+                {data.link ? (
+                  <button className="bg-red-600 text-white hover:bg-white hover:text-red-600 transition-all ease-in-out p-3 hover:border-red-600 border-2 rounded-lg my-2 self-start">
+                    <NavLink to="/about">{data.buttonText}</NavLink>
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => setIsOpen(true)}
+                    className="bg-red-600 text-white hover:bg-white hover:text-red-600 transition-all ease-in-out p-3 hover:border-red-600 border-2 rounded-lg my-2 self-start"
+                  >
+                    <p>{data.buttonText}</p>
+                  </button>
+                )}
               </div>
               <img
                 src={data.src}
@@ -93,7 +99,7 @@ function Home() {
       <div className="flex lg:justify-evenly md:justify-center align-center h-fit lg:p-10 md:p-5 w-full flex-wrap">
         <div className="w-full flex justify-center items-center">
           <h1 className="text-center my-3 text-3xl w-full font-bold bg-red-500 text-white p-5">
-            Our Project Videos
+            Our Happy Clients and Project Videos
           </h1>
         </div>
         <YoutubeEmbed />
@@ -136,9 +142,9 @@ function Home() {
       <div className="w-full flex flex-wrap justify-evenly">
         {services.map((service) => {
           return (
-            <Link
-              className="lg:w-1/4 flex justify-center items-center mx-5 lg:my-4 my-1 md:w-2/5 sm:w-full cursor-pointer hover:bg-gray-200 p-1 rounded-xl"
-              to="/services"
+            <a
+              className="lg:w-1/4 flex justify-center items-center mx-5 lg:my-4 my-1 md:w-2/5 sm:w-full  p-1 rounded-xl serviceDiv"
+              href={`/services#${service.id}`}
             >
               <img
                 src={service.src}
@@ -149,7 +155,7 @@ function Home() {
                 <h3 className="text-lg font-bold">{service.heading}</h3>
                 <span className="text-sm">{service.description}</span>
               </div>
-            </Link>
+            </a>
           );
         })}
       </div>

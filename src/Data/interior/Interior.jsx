@@ -12,7 +12,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 const Interior = () => {
   return (
     <>
-      <div className="my-5 w-full" id="Interior">
+      <div className="my-5 w-full" id="interior">
         <h1 className="text-center my-3 text-3xl font-bold bg-red-500 text-white p-5 ">
           Interior Design Homes
         </h1>

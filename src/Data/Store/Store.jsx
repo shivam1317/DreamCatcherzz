@@ -13,7 +13,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 const Store = () => {
   return (
     <>
-      <div className="mt-5 w-full mb-5" id="Store">
+      <div className="mt-5 w-full mb-5" id="store">
         <h1 className="text-center my-3 text-3xl font-bold bg-red-500 text-white p-5 ">
           Retail Stores
         </h1>

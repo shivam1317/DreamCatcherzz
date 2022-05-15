@@ -12,12 +12,9 @@ function About() {
       <div className="h-fitcontent w-full flex-row my-5 " id="container">
         <div className=" flex-wrap w-full inline-flex align-center justify-evenly p-5 ">
           <p className=" inline-flex align-top my-5  h-fit lg:w-4/5 md:w-3/4 text-md">
-            “We understand & catch your dream space ideas, convert them into
-            real design concepts & then execute it hassle free for our clients.”
-            Dreamcatcherzz Dreamcatcherzz is Lead by two main Designers : Shilpa
-            Shah Rawat and Kashyap Rawat. Most clients describe the work of
-            Shilpa & Kashyap as ‘ Dream come true’ . That’s why the name
-            Dreamcatcherzz.
+            Dreamcatcherzz is Lead by two main Designers : Shilpa Shah Rawat and
+            Kashyap Rawat. Most clients describe the work of Shilpa & Kashyap as
+            ‘ Dream come true’ . That’s why the name Dreamcatcherzz.
             <br></br>
             <br></br>
             In short Span of 4 years, Dreamcatcherzz has Designed and executed
@@ -53,8 +50,8 @@ function About() {
           </div>
           <div className="flex flex-col justify-evenly items-center">
             <img
-              className="inline shadow-2xl lg:mr-5 md:mr-0 w-64 h-80"
-              src="./images/shilpamaam.jpeg"
+              className="inline lg:mr-5 md:mr-0 w-64 h-64"
+              src="./images/shilpaRound.png"
               alt="The team of Dreamcatcherzzz"
             />
 
@@ -66,13 +63,13 @@ function About() {
         </div>
 
         <div className=" flex-wrap w-full inline-flex align-center lg:my-10 md:my-0 justify-evenly p-5 ">
-          <div className="flex flex-col justify-evenly items-center">
+          <div className="flex flex-col justify-evenly items-center bg-white">
             <img
-              className=" inline shadow-2xl rounded-xl h-96 w-64"
-              src="./images/kashyapsir.jpeg"
+              className=" inline rounded-xl h-64 w-64"
+              src="./images/kashyapRound.png"
               alt="The team of Dreamcatcherzzz"
             />
-            <div className="text-left text-xl text-red-600 font-bold">
+            <div className="mt-3 text-left text-xl text-red-600 font-bold">
               KASHYAP RAWAT
             </div>
           </div>

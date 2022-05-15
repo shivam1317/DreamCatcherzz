@@ -9,7 +9,7 @@ const projectData = [
   },
   {
     src: "./images/projects/3.jpg",
-    description: "Kota Kachori Jaipur",
+    description: "Kota Kachori Concept Store , Jaipur",
   },
   {
     src: "./images/projects/4.jpg",
@@ -25,11 +25,11 @@ const projectData = [
   },
   {
     src: "./images/projects/7.jpg",
-    description: "Marina Enclave Living Room Sofa",
+    description: "Gurukrupa Marina Enclave, mumbai (2bhk)",
   },
   {
     src: "./images/projects/8.jpg",
-    description: "Omkar ananta",
+    description: "Omkar Ananta, Mumbai ( 2bhk)",
   },
   {
     src: "./images/projects/9.jpg",

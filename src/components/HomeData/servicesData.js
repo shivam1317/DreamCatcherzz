@@ -1,33 +1,38 @@
 const serviceData = [
   {
     src: "./images/preview/1.jpg",
-    heading: "Jaipur Home",
-    description: "Dream Home Interior ",
+    heading: "Dream House Interiors",
+    description: "Elegant Living rooms",
     buttonText: "Enquire Now",
+    link: false,
   },
   {
     src: "./images/preview/2.jpg",
-    heading: "Meet The Designers",
+    heading: "Meet The Designers:",
     description: "Shilpa Rawat & Kashyap Rawat",
-    buttonText: "Talk To Designers",
-  },
-  {
-    src: "./images/preview/3.jpg",
-    heading: "Jaipur Home Kitchen",
-    description: "Modular Kitchen",
-    buttonText: "Enquire Now",
-  },
-  {
-    src: "./images/preview/4.jpg",
-    heading: "Kota Kachori Store",
-    description: "Design Your Store Interior + Exterior",
-    buttonText: "Book Consultation",
+    buttonText: "Know More",
+    link: true,
   },
   {
     src: "./images/preview/5.jpg",
-    heading: "Marina Bedroom",
+    heading: "Dream House",
     description: "Creative Bedroom Designs",
     buttonText: "Book Appointment",
+    link: false,
+  },
+  {
+    src: "./images/preview/3.jpg",
+    heading: "Kitchen Designs",
+    description: "Spacius,Space Clean,Modular",
+    buttonText: "Enquire Now",
+    link: false,
+  },
+  {
+    src: "./images/preview/4.jpg",
+    heading: "Retail Store Interior + Exterior Designs",
+    description: "Along With Customer Flow And Proper Branding",
+    buttonText: "Book Consultation",
+    link: false,
   },
 ];
 export { serviceData };
