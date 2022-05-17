@@ -9,6 +9,9 @@ function About() {
   }, []);
   return (
     <>
+    <meta name="title" content="About Us" />
+    <meta name="description" content="This is the about page of DreamCatcherzz design team" />
+    <meta name="keywords" content="Shilpa Rawat, Kashyap Rawat, DreamCatcherzz" />
       <div className="h-fitcontent w-full flex-row my-5 " id="container">
         <div className=" flex-wrap w-full inline-flex align-center justify-evenly p-5 ">
           <p className=" inline-flex align-top my-5  h-fit lg:w-4/5 md:w-3/4 text-md">
@@ -53,6 +56,7 @@ function About() {
               className="inline lg:mr-5 md:mr-0 w-64 h-64"
               src="./images/shilpaRound.png"
               alt="The team of Dreamcatcherzzz"
+              description="Shilpa Rawat image"
             />
 
             <div className="mt-3 text-xl text-red-600 font-bold">
@@ -68,6 +72,7 @@ function About() {
               className=" inline rounded-xl h-64 w-64"
               src="./images/kashyapRound.png"
               alt="The team of Dreamcatcherzzz"
+              description="Kashyap Rawat image"
             />
             <div className="mt-3 text-left text-xl text-red-600 font-bold">
               KASHYAP RAWAT

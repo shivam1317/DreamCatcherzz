@@ -35,6 +35,9 @@ function Contact() {
     });
   };
   return (
+    <><meta name="title" content="Contact Us" />
+    <meta name="description" content="This is the contact page for DreamCatcherzz design team" />
+    <meta name="keywords" content="DreamCatcherzz,Dreamcatchers,Shilpa Rawat,Kashyap Rawat,Designers,Interior Designers, Contact dreamcatchers"/>
     <div className="h-fit w-full" id="container">
       <div className="w-full flex justify-evenly flex-wrap">
         <img src="./images/contact_us.svg" alt="contact us" className="w-1/3" />
@@ -58,8 +61,7 @@ function Contact() {
                 type="text"
                 placeholder="Jane Doe"
                 required
-                name="name"
-              />
+                name="name" />
             </div>
             <div className="lg:w-1/2 md:w-20 px-3">
               <label
@@ -74,8 +76,7 @@ function Contact() {
                 type="number"
                 placeholder="Phone no..."
                 required
-                name="phone"
-              />
+                name="phone" />
             </div>
           </div>
           <div className="flex flex-wrap md:mx-0 lg:-mx-3 mb-6 md:w-full justify-center  ">
@@ -92,8 +93,7 @@ function Contact() {
                 type="email"
                 placeholder="user@email.com"
                 required
-                name="email"
-              />
+                name="email" />
             </div>
           </div>
           <div className="flex flex-wrap md:mx-0 lg:-mx-3 w-full justify-center mb-6">
@@ -170,8 +170,7 @@ function Contact() {
                   type="text"
                   placeholder="area"
                   required
-                  name="area"
-                />
+                  name="area" />
               </div>
               <div className="lg:w-1/2 md:w-1/3 px-3 mb-6 md:mb-0 mt-7">
                 <label
@@ -186,8 +185,7 @@ function Contact() {
                   type="text"
                   placeholder="Mumbai"
                   required
-                  name="location"
-                />
+                  name="location" />
               </div>
             </div>
             <div className="flex flex-wrap md:mx-0 lg:-mx-3 w-full justify-center md:mb-3 lg:mb-4 ">
@@ -204,8 +202,7 @@ function Contact() {
                   type="date"
                   placeholder="dd-mm-yy"
                   required
-                  name="date"
-                />
+                  name="date" />
               </div>
               <div className="lg:w-1/2 md:w-1/3 px-3 mb-6 md:mb-0 mt-7">
                 <label
@@ -220,8 +217,7 @@ function Contact() {
                   type="number"
                   placeholder="Budget..."
                   required
-                  name="budget"
-                />
+                  name="budget" />
               </div>
             </div>
             <div className="md:w-1/3 lg:w-full px-3 mb-6 md:mb-0 mt-7">
@@ -236,8 +232,7 @@ function Contact() {
                 id="grid-zip"
                 type="date"
                 placeholder="Hello..."
-                name="message"
-              />
+                name="message" />
             </div>
             <div className="w-full text-center my-5">
               <button className="uppercase bg-red-600 text-white font-bold hover:text-red-600 hover:bg-white border-2 hover:border-red-600 w-1/2 py-1 px-3 transition-all delay-75 rounded-xl">
@@ -249,7 +244,7 @@ function Contact() {
         </form>
       </div>
       <Footer />
-    </div>
+    </div></>
   );
 }
 

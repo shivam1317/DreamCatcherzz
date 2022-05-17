@@ -13,6 +13,9 @@ const Services = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
+    <>
+    <meta name="title" content="Services" />
+    <meta name="description" content="This si the service page of DreamCatcherzz team website" />
     <div>
       <Interior />
       <Cafe />
@@ -27,7 +30,7 @@ const Services = () => {
         </button>
       </div>
       <Footer />
-    </div>
+    </div></>
   );
 };
 

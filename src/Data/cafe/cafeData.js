@@ -1,6 +1,7 @@
 const cafeData = [
   {
     src: "./images/Services/cafe/cafe1.jpg",
+
   },
   {
     src: "./images/Services/cafe/cafe2.jpg",
