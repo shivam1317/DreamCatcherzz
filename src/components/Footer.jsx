@@ -1,4 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
+import "../css/footer.css";
 
 const Footer = () => {
   return (
@@ -140,28 +141,15 @@ const Footer = () => {
             Malad (West), Mumbai. 400067
           </p>
         </div>
-        <hr className="border-2 border-white w-full" />
-        <p className="text-white text-center w-full font-bold text-2xl my-3">
-          Made by :-{" "}
+        <p className="text-white text-center w-full font-bold text-xl my-3 flex justify-center items-center flex-col ">
+          <p>Site Developed And Maintained By:-</p>
           <a
-            href="https://www.linkedin.com/in/krunal-rane-4178a01b4/"
+            href="https://triocoders.netlify.com"
             target="_blank"
+            className="text-center bg-white p-4 rounded-md m-2 text-white developerBtn hover:text-gray-200"
+            rel="noreferrer"
           >
-            Krunal Rane
-          </a>
-          ,{" "}
-          <a
-            href="https://www.linkedin.com/in/shivam-danawale-b9a8a21b4/"
-            target="_blank"
-          >
-            Shivam Danawale
-          </a>
-          ,{" "}
-          <a
-            href="https://www.linkedin.com/in/furqan-amiri-499a66178/"
-            target="_blank"
-          >
-            Furqan Amiri
+            TrioCoders
           </a>
         </p>
       </div>
