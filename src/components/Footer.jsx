@@ -3,7 +3,6 @@ import { NavLink, Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-  
       <div className="flex p-3 justify-evenly w-full flex-wrap bg-red-500 ">
         <div className="lg:p-5 md:p-2 flex flex-col justify-evenly items-center text-red-500  lg:w-1/5 lg:mx-1 md:mx-3 md:w-2/5 ">
           <p className="text-white font-bold text-xl text-center w-full p-3">
@@ -14,7 +13,6 @@ const Footer = () => {
               src="./images/Footer/Instagram.svg"
               alt="Instagram"
               className="h-5 w-5"
-             
             />
             <a
               href="https://www.instagram.com/dreamcatcherzz_design/"
@@ -67,7 +65,7 @@ const Footer = () => {
             </a>
           </p>
         </div>
-        <div className=" lg:p-5 md:p-2 lg:w-1/5 lg:mx-4 md:mx-3 md:w-2/5">
+        <div className=" lg:p-5 md:p-2 lg:w-1/5 lg:mx-2 md:mx-3 md:w-2/5">
           <p className="p-3 text-white text-center text-xl font-bold">
             Quick Access
           </p>
@@ -91,18 +89,28 @@ const Footer = () => {
           <p className="p-3 text-white text-center font-bold text-xl">
             Services
           </p>
-          <p className="p-3 text-white text-center font-bold">Home Interiors</p>
-          <p className="p-3 text-white text-center font-bold">Art & Decor</p>
           <p className="p-3 text-white text-center font-bold">
-            Store Interior/Exterior
+            <a href="/services#interior">Home Interior Design</a>
           </p>
           <p className="p-3 text-white text-center font-bold">
-            Restorents/Cafe/Qsr's
+            <a href="/services#store">Retail Store /Hotel Interior Design</a>
           </p>
           <p className="p-3 text-white text-center font-bold">
-            Vastu & Energy Correction
+            <a href="/services#cafe">Restaurants / Café / QSR / Food Truck</a>
           </p>
-          <p className="p-3 text-white text-center font-bold">Branding</p>
+          <p className="p-3 text-white text-center font-bold text-xl w-full">
+            Additional Services:
+          </p>
+          <p className="p-3 text-white text-center font-bold">
+            <a href="/services#unique">Vaastu & Energy Correction</a>
+          </p>
+          <p className="p-3 text-white text-center font-bold">Art & Décor</p>
+          <p className="p-3 text-white text-center font-bold">
+            <a href="/services#unique">Home organising</a>
+          </p>
+          <p className="p-3 text-white text-center font-bold">
+            <a href="/services#unique">Branding</a>
+          </p>
         </div>
         <div className="p-5 lg:w-1/5 h-full flex flex-col justify-evenly items-center mx-4 md:w-2/5">
           <p className="p-3 text-white text-center font-bold text-xl">

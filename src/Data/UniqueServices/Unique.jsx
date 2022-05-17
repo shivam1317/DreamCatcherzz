@@ -2,7 +2,7 @@ import React from "react";
 
 const Unique = () => {
   return (
-    <div>
+    <div id="unique">
       <h1 className="text-center my-5 text-3xl font-bold bg-red-500 text-white p-3 ">
         Our Unique Add-On Premium Services
       </h1>
@@ -28,7 +28,7 @@ const Unique = () => {
             crystals placements &amp; Pranic Healing techniques to give that
             space very good &amp; smooth flow of energies . .We also provide
             specific meditations sessions to bless your home with good energies
-            when you Shift in.
+            when you shift in.
           </p>
         </div>
         <div className="rounded-lg bg-gray-100 my-3 p-8 mx-3 lg:w-2/5 w-full text-center">
@@ -40,7 +40,7 @@ const Unique = () => {
             with unique storage and organising solutions for Wardrobes, drawers,
             kitchen, writing desk area , bathrooms so you have everything
             properly organised and arranged as per your convenience in your
-            home. But you don’t have to di it yourself, we will do it for you.
+            home. But you don’t have to do it yourself, we will do it for you.
           </p>
         </div>
         <div className="rounded-lg bg-gray-100 my-3 p-8 mx-3 lg:w-2/5 w-full text-center">

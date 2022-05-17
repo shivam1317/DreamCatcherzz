@@ -15,7 +15,7 @@ const Store = () => {
     <>
       <div className="mt-5 w-full mb-5" id="store">
         <h1 className="text-center my-3 text-3xl font-bold bg-red-500 text-white p-5 ">
-          Retail Stores
+          Retail store/ Hotel Interior Design
         </h1>
         <Swiper
           slidesPerView={window.innerWidth <= 768 ? 1 : 3}
@@ -44,6 +44,11 @@ const Store = () => {
             );
           })}
         </Swiper>
+        <div className="flex justify-center items-center w-full">
+          <h1 className="text-lg font-bold mt-3 mb-8">
+            Retail store/ Hotel Interior Design
+          </h1>
+        </div>
       </div>
     </>
   );

@@ -14,23 +14,28 @@ const Services = () => {
   }, []);
   return (
     <>
-    <meta name="title" content="Services" />
-    <meta name="description" content="This si the service page of DreamCatcherzz team website" />
-    <div>
-      <Interior />
-      <Cafe />
-      <Store />
-      <Unique />
-      <div className="flex justify-center items-center w-full mb-3 p-5">
-        <button
-          onClick={scroll.scrollToTop}
-          className="bg-red-600 text-white hover:bg-white hover:text-red-600 transition-all ease-in-out p-3 hover:border-red-600 border-2 rounded-lg"
-        >
-          Back to top
-        </button>
+      <meta name="title" content="Services" />
+      <meta
+        name="description"
+        content="This is the service page of DreamCatcherzz team website"
+      />
+      <div>
+        <Interior />
+        <Cafe />
+        <Store />
+
+        <Unique />
+        <div className="flex justify-center items-center w-full mb-3 p-5">
+          <button
+            onClick={scroll.scrollToTop}
+            className="bg-red-600 text-white hover:bg-white hover:text-red-600 transition-all ease-in-out p-3 hover:border-red-600 border-2 rounded-lg"
+          >
+            Back to top
+          </button>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div></>
+    </>
   );
 };
 

@@ -23,7 +23,7 @@ const serviceData = [
   {
     src: "./images/preview/3.jpg",
     heading: "Kitchen Designs",
-    description: "Spacius,Space Clean,Modular",
+    description: "Spacious,Space Clean,Modular",
     buttonText: "Enquire Now",
     link: false,
   },
@@ -32,6 +32,13 @@ const serviceData = [
     heading: "Retail Store Interior + Exterior Designs",
     description: "Along With Customer Flow And Proper Branding",
     buttonText: "Book Consultation",
+    link: false,
+  },
+  {
+    src: "./images/preview/6.jpg",
+    heading: "Café / Restaurants / QSR Designs",
+    description: "Creative, Practical and Beautiful",
+    buttonText: "Enquire now",
     link: false,
   },
 ];

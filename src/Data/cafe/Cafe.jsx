@@ -15,7 +15,7 @@ const Cafe = () => {
     <>
       <div className="my-8 w-full" id="cafe">
         <h1 className="text-center my-5 text-3xl font-bold bg-red-500 text-white p-3 ">
-          Cafe Restaurants QSR
+          Restaurants/ Café/ QSR/ Food Truck
         </h1>
         <Swiper
           slidesPerView={window.innerWidth <= 768 ? 1 : 3}
@@ -40,6 +40,11 @@ const Cafe = () => {
             );
           })}
         </Swiper>
+        <div className="flex justify-center items-center w-full">
+          <h1 className="text-lg font-bold mt-3 mb-8">
+            Restaurants/ Café/ QSR/ Food Truck
+          </h1>
+        </div>
       </div>
     </>
   );

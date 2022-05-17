@@ -20,5 +20,20 @@ const storeData = [
   {
     src: "./images/Services/store/s7.jpg",
   },
+  {
+    src: "./images/Services/store/s8.jpg",
+  },
+  {
+    src: "./images/Services/store/s9.jpg",
+  },
+  {
+    src: "./images/Services/store/s10.jpg",
+  },
+  {
+    src: "./images/Services/store/s11.jpg",
+  },
+  {
+    src: "./images/Services/store/s12.jpg",
+  },
 ];
 export { storeData };
