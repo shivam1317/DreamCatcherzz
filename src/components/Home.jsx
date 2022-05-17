@@ -27,15 +27,15 @@ const services = [
     description: "Click Here!",
   },
   {
-    heading: "Retail store/ Hotel Interior Design",
+    heading: "Restaurants/ Café/ QSR/ Food Truck",
     id: "cafe",
-    src: "./images/Services/cafe.svg",
+    src: "./images/Services/store.svg",
     description: "Click Here!",
   },
   {
-    heading: "Restaurants/ Café/ QSR/ Food Truck",
+    heading: "Retail store/ Hotel Interior Design",
     id: "store",
-    src: "./images/Services/store.svg",
+    src: "./images/Services/cafe.svg",
     description: "Click Here!",
   },
 ];
@@ -307,7 +307,7 @@ function Home() {
                       {customer.cname}
                     </p>
                   </div>
-                  <p className="text-center my-3">{customer.review}</p>
+                  <p className="text-center my-3">"{customer.review}"</p>
                   <button className="bg-red-500 text-white hover:bg-white border-2 hover:border-red-500 hover:text-red-500 rounded-lg transition-all ease-in-out w-1/2 self-center p-2 font-bold my-3">
                     {/* Add customer review playlist here... */}
                     <a href={customer.link} target="_blank" rel="noreferrer">

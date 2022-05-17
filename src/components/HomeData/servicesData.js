@@ -1,7 +1,7 @@
 const serviceData = [
   {
     src: "./images/preview/1.jpg",
-    heading: "Dream House Interiors",
+    heading: "Dream Home Interiors",
     description: "Elegant Living rooms",
     buttonText: "Enquire Now",
     link: false,
@@ -15,7 +15,7 @@ const serviceData = [
   },
   {
     src: "./images/preview/5.jpg",
-    heading: "Dream House",
+    heading: "Dream Home",
     description: "Creative Bedroom Designs",
     buttonText: "Book Appointment",
     link: false,
@@ -23,7 +23,7 @@ const serviceData = [
   {
     src: "./images/preview/3.jpg",
     heading: "Kitchen Designs",
-    description: "Spacious,Space Clean,Modular",
+    description: "Spacious,Clean,Modular",
     buttonText: "Enquire Now",
     link: false,
   },

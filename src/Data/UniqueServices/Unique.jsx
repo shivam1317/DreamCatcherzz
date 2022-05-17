@@ -26,7 +26,7 @@ const Unique = () => {
             project without much Breakdowns . Energy correction for your homes,
             offices, stores through various solutions like using Programmed
             crystals placements &amp; Pranic Healing techniques to give that
-            space very good &amp; smooth flow of energies . .We also provide
+            space very good &amp; smooth flow of energies. We also provide
             specific meditations sessions to bless your home with good energies
             when you shift in.
           </p>
