@@ -21,13 +21,13 @@ const magazineData = [
   },
   {
     tagline:
-      "“reamcatcherzz is known for design solutions with quick turnaround times along with its ability to embrace experimenting with new materials and processes.",
+      "Dreamcatcherzz is known for design solutions with quick turnaround times along with its ability to embrace experimenting with new materials and processes.",
     mname: "Canadianwood.in",
     link: "https://www.canadianwood.in/wp-content/uploads/2020/06/Case-Study-3-KOTA-KACHORI.pdf",
   },
   {
     tagline:
-      "the design work is Melange of palatial glamour &amp; modern functionalism",
+      "the design work is Melange of palatial glamour & modern functionalism",
     mname: "Asian Paints.com",
     link: "https://www.asianpaints.com/colourpro/showcase/kota-kachori.html",
   },
