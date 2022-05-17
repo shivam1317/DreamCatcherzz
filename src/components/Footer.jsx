@@ -3,6 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
+  
       <div className="flex p-3 justify-evenly w-full flex-wrap bg-red-500 ">
         <div className="lg:p-5 md:p-2 flex flex-col justify-evenly items-center text-red-500  lg:w-1/5 lg:mx-1 md:mx-3 md:w-2/5 ">
           <p className="text-white font-bold text-xl text-center w-full p-3">
@@ -13,6 +14,7 @@ const Footer = () => {
               src="./images/Footer/Instagram.svg"
               alt="Instagram"
               className="h-5 w-5"
+             
             />
             <a
               href="https://www.instagram.com/dreamcatcherzz_design/"

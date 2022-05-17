@@ -51,6 +51,10 @@ function Home() {
     }
   }, []);
   return (
+    <><meta name="title" content="Dreamcatcherzz Home" />
+    <meta name="description" content="This is the home page of DreamCatcherzz website" />
+    <meta name="keywords" content="DreamCatehrzz , dreamcatchers, designers, indian designers, best interior designs, dream home, home designs, modular designs"/>
+
     <div className="h-screen" id="container">
       <Swiper
         slidesPerView={1}
@@ -90,8 +94,7 @@ function Home() {
               <img
                 src={data.src}
                 alt="preview"
-                className="lg:w-1/2 md:w-full h-full"
-              />
+                className="lg:w-1/2 md:w-full h-full" />
             </SwiperSlide>
           );
         })}
@@ -116,8 +119,7 @@ function Home() {
               <img
                 src={data.img}
                 alt="provideImg"
-                className="w-4/5 lg:h-60 h-20"
-              />
+                className="w-4/5 lg:h-60 h-20" />
               <p className="lg:text-lg text-sm font-bold text-center my-3 p-3 rounded-lg">
                 {data.text}
               </p>
@@ -149,8 +151,8 @@ function Home() {
               <img
                 src={service.src}
                 alt="service"
-                className="lg:w-3/5 w-2/5 mr-2"
-              />
+                className="lg:w-3/5 w-2/5 mr-2" 
+                description="Service icon "/>
               <div className="flex flex-col justify-around">
                 <h3 className="text-lg font-bold">{service.heading}</h3>
                 <span className="text-sm">{service.description}</span>
@@ -223,14 +225,12 @@ function Home() {
                 <img
                   src="./images/left-quote.png"
                   alt="left-quote"
-                  className="block h-8 w-8"
-                />
+                  className="block h-8 w-8" />
                 <p className="quote p-3">{magazine.tagline}</p>
                 <img
                   src="./images/right-quote.png"
                   alt="left-quote"
-                  className="h-8 w-8 ml-auto"
-                />
+                  className="h-8 w-8 ml-auto" />
               </div>
               <a
                 href={magazine.link}
@@ -254,8 +254,7 @@ function Home() {
           <img
             src="./images/Footer/whatsapp.svg"
             alt="WhatsApp"
-            className="h-7 w-7 mx-2"
-          />
+            className="h-7 w-7 mx-2" />
           <span>Give Us A Call</span>
         </a>
       </div>
@@ -285,8 +284,7 @@ function Home() {
                   <img
                     src={customer.pfpSrc}
                     alt="customer"
-                    className="h-12 w-12 rounded-full"
-                  />
+                    className="h-12 w-12 rounded-full" />
                   <p className="font-bold text-lg text-white text-center">
                     {customer.cname}
                   </p>
@@ -307,15 +305,14 @@ function Home() {
                 <img
                   src="./images/Customers/review_svg.svg"
                   alt="svg"
-                  className="h-fit"
-                />
+                  className="h-fit" />
               </div>
             </SwiperSlide>
           );
         })}
       </Swiper>
       <Footer />
-    </div>
+    </div></>
   );
 }
 

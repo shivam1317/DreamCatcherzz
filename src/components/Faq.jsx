@@ -21,6 +21,8 @@ function Faq() {
 
   return (
     <>
+    <meta name="title" content="Frequently asked questions" />
+    <meta name="description" content="This is FAQ page for DreamCatcherzz team" />
       <div className="wrapper h-screen w-screen" id="container">
         <div className="accordion shadow-2xl">
           {data.map((item, i) => {
