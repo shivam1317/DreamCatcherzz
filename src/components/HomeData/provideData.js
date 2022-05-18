@@ -5,7 +5,7 @@ const provideData = [
   },
   {
     img: "./images/Home/provide2.svg",
-    text: "Customize Design",
+    text: "Customised Designs",
   },
   {
     img: "./images/Home/provide3.svg",
@@ -13,7 +13,7 @@ const provideData = [
   },
   {
     img: "./images/Home/provide4.svg",
-    text: "Luxury & Modular Furniture",
+    text: "Luxurious & Modular Furniture",
   },
 ];
 export default provideData;
