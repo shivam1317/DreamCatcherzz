@@ -123,13 +123,13 @@ function Home() {
         <div className="w-full flex justify-evenly items-center flex-wrap">
           {provideData.map((data) => {
             return (
-              <div className="flex flex-col w-2/5 lg:w-1/3 justify-center items-center lg:mx-5 mx-1 my-2 lg:my-5 provideDiv p-3 rounded-lg">
+              <div className="flex flex-col w-2/5 lg:w-1/3 justify-center items-center lg:mx-5 mx-1 my-2 lg:my-5 provideDiv p-3 rounded-lg h-36">
                 <img
                   src={data.img}
                   alt="provideImg"
                   className="w-4/5 lg:h-60 h-20"
                 />
-                <p className="lg:text-lg text-sm font-bold text-center my-3 p-3 rounded-lg">
+                <p className="lg:text-lg text-sm font-bold text-center my-3 p-1 rounded-lg w-full">
                   {data.text}
                 </p>
               </div>
