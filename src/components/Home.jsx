@@ -109,25 +109,25 @@ function Home() {
         </Swiper>
         <div className="flex lg:justify-evenly md:justify-center align-center h-fit lg:p-10 md:p-5 w-full flex-wrap">
           <div className="w-full flex justify-center items-center">
-            <h1 className="text-center my-3 text-3xl w-full font-bold bg-red-500 text-white p-5">
+            <h1 className="text-center my-3 lg:text-3xl text-2xl w-full font-bold bg-red-500 text-white p-5">
               Our Happy Clients and Project Videos
             </h1>
           </div>
           <YoutubeEmbed />
         </div>
         <div className="w-full flex justify-center items-center">
-          <h1 className="text-center my-3 text-3xl lg:w-1/2 md:w-full font-bold bg-red-500 text-white p-5 lg:rounded-md md:rounded-none">
+          <h1 className="text-center my-3 lg:text-3xl text-2xl lg:w-1/2 md:w-full font-bold bg-red-500 text-white p-5 lg:rounded-md md:rounded-none">
             Why Choose Dreamcatcherzz?
           </h1>
         </div>
         <div className="w-full flex justify-evenly items-center flex-wrap">
           {provideData.map((data) => {
             return (
-              <div className="flex flex-col w-2/5 lg:w-1/3 justify-center items-center lg:mx-5 mx-1 my-2 lg:my-5 provideDiv p-3 rounded-lg h-36">
+              <div className="flex flex-col w-2/5 lg:w-1/3 justify-center items-center lg:mx-5 mx-1 my-2 lg:my-5 p-3 rounded-lg h-36 lg:h-60">
                 <img
                   src={data.img}
                   alt="provideImg"
-                  className="w-4/5 lg:h-60 h-20"
+                  className="w-4/5 lg:h-40 h-20"
                 />
                 <p className="lg:text-lg text-sm font-bold text-center my-3 p-1 rounded-lg w-full">
                   {data.text}
@@ -145,7 +145,7 @@ function Home() {
           </button>
         </div>
         <div className="flex items-center justify-center lg:my-5 my-2 font-bold bg-red-500 text-white p-5">
-          <h1 className="text-3xl">Our Services </h1>
+          <h1 className="lg:text-3xl text-2xl">Our Services </h1>
         </div>
         <div className="my-3">
           <h1 className="font-bold text-center text-2xl">What We Provide!</h1>
@@ -154,7 +154,7 @@ function Home() {
           {services.map((service) => {
             return (
               <a
-                className="lg:w-1/4 flex justify-center items-center mx-5 lg:my-4 my-1 md:w-2/5 sm:w-full  p-1 rounded-xl serviceDiv"
+                className="lg:w-1/4 flex justify-center items-center mx-5 lg:my-4 my-2 md:w-2/5 sm:w-full  p-1 rounded-xl provideDiv"
                 href={`/services#${service.id}`}
               >
                 <img
@@ -165,14 +165,22 @@ function Home() {
                 />
                 <div className="flex flex-col justify-around">
                   <h3 className="text-lg font-bold">{service.heading}</h3>
-                  <span className="text-sm">{service.description}</span>
+                  <span className="text-md text-red-500 font-bold">
+                    {service.description}
+                  </span>
                 </div>
               </a>
             );
           })}
         </div>
-        <div className="my-3">
+        <div className="lg:my-3 lg:mt-0 mt-9 flex flex-col justify-center items-center">
           <h1 className="font-bold text-center text-2xl">Our Projects</h1>
+          <a
+            href="/services"
+            className="bg-red-500 py-3 px-5 text-white text-center rounded-md mt-4 font-bold"
+          >
+            View More
+          </a>
         </div>
         <Swiper
           slidesPerView={window.innerWidth <= 768 ? 1 : 3}
@@ -212,7 +220,7 @@ function Home() {
           <Modal open={isOpen} onClose={() => setIsOpen(false)}></Modal>
         </div>
         <div className="flex items-center my-5 justify-center font-bold bg-red-500 text-white p-5">
-          <h1 className="text-3xl text-center"> Achievements </h1>
+          <h1 className="lg:text-3xl text-2xl text-center"> Achievements </h1>
         </div>
         <Swiper
           slidesPerView={window.innerWidth <= 768 ? 1 : 3}
@@ -276,7 +284,10 @@ function Home() {
           </a>
         </div>
         <div className="flex items-center my-5 justify-center font-bold bg-red-500 text-white p-5">
-          <h1 className="text-3xl text-center"> Customer review </h1>
+          <h1 className="lg:text-3xl text-2xl text-center">
+            {" "}
+            Customer review{" "}
+          </h1>
         </div>
         <Swiper
           slidesPerView={1}

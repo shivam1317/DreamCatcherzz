@@ -40,7 +40,7 @@ function Navbar() {
             <img
               src="./images/dreamcatcherzz_logo.png"
               alt="Here"
-              className="object-scale-down h-10 w-20"
+              className="object-scale-down h-10 w-12"
             />
           </div>
 
@@ -115,7 +115,11 @@ function Navbar() {
                 activeClassName="active"
                 onClick={closeMobile}
               >
-                <span>Services</span>
+                <span>
+                  {window.innerWidth <= 798
+                    ? "Services + Project Gallery"
+                    : "Services"}
+                </span>
               </NavLink>
 
               <NavLink
